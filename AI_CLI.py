@@ -72,6 +72,10 @@ pwd
 
 
 
+------LS---------
+ls --> liste hamar bede
+
+
 -----change Directories-----
 cd folder_name  # move into folder
 cd ..           # move up one folder
@@ -352,6 +356,16 @@ curl va wget besoorate bydefault rooye system ha hastand.
 
 #=======================================================
 '''
+ma yeseri dastoorate shell --> pwd , ls , cd , mv , cp , rm , touch, cat ,
+
+
+abzarate mohem (tool) by default --> vim , nano, ping , curl , wget
+
+
+1 milliard abzar dar jahan vojod dare
+1000 abzare maroof --> berizimeshon
+
+
 Non Default and Advanced CLI TOOLS
 '''
 
@@ -371,7 +385,6 @@ User-friendly HTTP client, easier than curl.
 
 --nmap---
 Advanced network scanning.
-
 
 
 --htop--
