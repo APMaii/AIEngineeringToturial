@@ -80,16 +80,47 @@ Linus Trovalds --> ABAR ENSAN
 
 
 '''
----> GUI *graphical user interface , folder pak mikoni 
----> CLI --> command (dastoor)  rm -rf payananme 
 
+------> MOSHKEL CHIE???
+
+man koli file daram , directory (folder) va hey misazam , edit mizanam , hazf mikonam
+
+
+File ha sakhte mishe
+file ha edit mishe
+file ha hazf mishe
+
+mikham har kari k krdm sabt bshe --> sabteshon konm
+
+
+-->1- nazm daram
+-->2- midonm key chikar krdm
+--->3- hamashon zakhrian , harmoghe khastam b se rooz pish
+---> 4.......
+
+
+ye nafarim , yechizi , y toooli , abzari --> nezarat kone
+rooye kole laptab?? na
+
+ye foldero neshon mikonm -> aghaye x ino moraghebesh bash (nexzarat kon)
+
+abzar --> git 
+
+Linus Trovalds
+
+-->systemam ---> bASH --> AI_CLI.py  cd pwd topuch ,.... | vel kon
+abzari --> git --> dare laptabam? na
 
 
 Baraye download git -->
-WINDOWS --> https://git-scm.com  (default option) Git bash(terminal)
+WINDOWS --> https://git-scm.com  (default option) Git bash(terminal) --> SHELL (siah)  | abzare git
 
-macos --> terminal --> brew install git
-Linux --> sudo apt install git
+macos --> terminal (bash) --> brew install git
+Linux --> Terminus,.,..(bash) ---> sudo apt install git
+
+
+
+windows, macos, linux --> SHELL --> git mishnase 
 
 
 
@@ -189,6 +220,7 @@ commit.
 
 baraye inke bbini chia tooye 'alan' vojod dare , stage , unstage
 az dastoore --> git status --> estefade mikoni
+(mibinm too 'alan' , 'stage')
 
 -------------------------------------------
 (base) apm@APMs-MacBook-Pro ai_engineering_test % git status
@@ -244,6 +276,8 @@ ba dastoore git add in karo mikonim
 
 
 hala badesh status migirim bebinim chekhaabre
+
+
 
 
 -------------------------------------------
@@ -385,9 +419,332 @@ no changes added to commit (use "git add" and/or "git commit -a")
 
 
 
+
+
+
+baraye bargardoondane yek file az satge too halate adi
+
+git restore --staged esme_file
+
+
+
+
+gahan bejaye inke chant achant bznim mitonim az dot (.) estefade konim
+
+
+bejaye
+
+git add new1.py
+git add new2.py
+
+mitonim bnvisim
+git add . 
+#in hamaro 
+
+
+
+#restore
+git restore --staged new1.py
+git restore --staged new2.py
+
+
+git restore --staged . 
+
+
+
+
 '''
 
 
+'''
+
+#---
+git log
+
+tamame commit hato miare
+
+#5 ta loge akahr
+git log -5
+
+
+
+git log --author="yourname"
+
+
+
+git log app.py
+
+
+
+#git diff
+
+#git 
+
+
+
+'''
+
+#2- Git Hub--------
+
+
+'''
+git ---> linus trovalds
+github --> microsoft
+
+
+github --> hub baraye git haa
+
+
+
+to mitoni manage koni ba abzare git --> dakhele laptabeto
+
+man mikham barnamam besoorate msohakahs (foldar)
+beyne hamebashe
+
+man , dostam , felani ,.....
+
+center mikhaym --> source of true
+
+hub 
+git hub --> hubi hast baraye git haye shoma
+
+
+account darim 
+vaghtyy miri repo new mizni , 
+
+
+
+
+
+
+
+
+'''
+
+
+
+'''
+
+
+
+OPTION1 -------------
+yek folder tooye laptabet sakhti, hala mikhagy vaslesh koni b github
+
+
+ma ta alan yek chizi too local sakhtim
+
+(base) apm@APMs-MacBook-Pro fanavari2026 % ls        
+myprogram.py	new2.py		newprogram.py	newwwwwww.py
+
+
+
+miri dkahele github mishi , ye repo misazi (github)
+
+
+
+git branch -M main
+
+git remote add origin https://github.com/APMaii/fanavari2026.git
+
+
+
+
+Usernam  --> esmi dari 
+Password --> ? ERROR
+
+
+-->khob goosh bde
+
+[dakhele telegram ferestade shod] ---> Token
+
+
+passsword  --> token 
+
+
+anjam mide 
+
+**in yekbar hast 
+
+
+git config --global credential.helper manager
+
+or
+
+git config --global credential.helper store 
+
+
+
+
+koli commit kardam??? --> locale khodam 
+
+
+####git push origin    [git harchi commit kardam ro origin()]
+git push -u origin main
+OPTION2------------
+SHoma yek folder repo too github hast , mikjhay bgirish , hala mikhay vasl shi b oon
+
+
+
+
+************88
+======RAHANMAYE DEVELOPER HA======
+harchi uypdate hast az github miad roo local (laptabet)
+git pull origin  
+
+
+
+miri code mizni
+git status -->mibini
+git add
+git commit
+
+
+commit? --> local (laptab)
+10 ta ciommit, 100 ta commit
+shab k shod karet k tamoom shod
+
+git pull origin (harchi hast biad)
+git push origin main
+mire too github
+
+
+
+
+MESAL---
+(base) apm@APMs-MacBook-Pro fanavari2026 % git pull origin
+Already up to date.
+(base) apm@APMs-MacBook-Pro fanavari2026 % touch alipm.py
+(base) apm@APMs-MacBook-Pro fanavari2026 % vim alipm.py
+(base) apm@APMs-MacBook-Pro fanavari2026 % touch alipm2.py
+(base) apm@APMs-MacBook-Pro fanavari2026 % touch alipm3.py
+(base) apm@APMs-MacBook-Pro fanavari2026 % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	alipm.py
+	alipm2.py
+	alipm3.py
+	newwwwwww.py
+
+nothing added to commit but untracked files present (use "git add" to track)
+(base) apm@APMs-MacBook-Pro fanavari2026 % git add alipm.py
+(base) apm@APMs-MacBook-Pro fanavari2026 % git commit -m 'man file salam ro sakhtam'
+[main 519039a] man file salam ro sakhtam
+ 1 file changed, 3 insertions(+)
+ create mode 100644 alipm.py
+(base) apm@APMs-MacBook-Pro fanavari2026 % git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	alipm2.py
+	alipm3.py
+	newwwwwww.py
+
+nothing added to commit but untracked files present (use "git add" to track)
+(base) apm@APMs-MacBook-Pro fanavari2026 % git add alipm2.py
+(base) apm@APMs-MacBook-Pro fanavari2026 % git add alipm3.py
+(base) apm@APMs-MacBook-Pro fanavari2026 % git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   alipm2.py
+	new file:   alipm3.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	newwwwwww.py
+
+(base) apm@APMs-MacBook-Pro fanavari2026 % git commit -m 'file haye 2,3 sakhte shod'
+[main 8359be9] file haye 2,3 sakhte shod
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 alipm2.py
+ create mode 100644 alipm3.py
+(base) apm@APMs-MacBook-Pro fanavari2026 % git add newwwwwww.py
+(base) apm@APMs-MacBook-Pro fanavari2026 % git commit -m 'news ra skahte am'
+[main 3f38ffa] news ra skahte am
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 newwwwwww.py
+(base) apm@APMs-MacBook-Pro fanavari2026 % git pull origin 
+Already up to date.
+(base) apm@APMs-MacBook-Pro fanavari2026 % git push origin main
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (8/8), 809 bytes | 809.00 KiB/s, done.
+Total 8 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), done.
+To https://github.com/APMaii/fanavari2026.git
+   8970035..3f38ffa  main -> main
+
+
+
+
+
+
+
+----OPTION2-------
+zamani hast k code hast , mikhaysh biarish too lcoalet
+(zamani k code sherkate) khode githube
+
+git clone https://github.com/APMaii/AIEngineeringToturial.git
+
+public bashe mitoni download koni 
+
+private bashe 
+user passs 
+
+
+na git init mikhjay (khorde) -->inite 
+
+
+(base) apm@APMs-MacBook-Pro AIEngineeringToturial % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+
+(base) apm@APMs-MacBook-Pro AIEngineeringToturial % touch test2.py
+(base) apm@APMs-MacBook-Pro AIEngineeringToturial % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	test2.py
+
+nothing added to commit but untracked files present (use "git add" to track)
+(base) apm@APMs-MacBook-Pro AIEngineeringToturial % git add test2.py 
+(base) apm@APMs-MacBook-Pro AIEngineeringToturial % git commit -m 'teste 2'
+[main 96b85da] teste 2
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 test2.py
+(base) apm@APMs-MacBook-Pro AIEngineeringToturial % git push origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 281 bytes | 281.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object
+To https://github.com/APMaii/AIEngineeringToturial.git
+   c958dec..96b85da  main -> main
+
+
+
+
+
+
+'''
 
 
 
@@ -436,12 +793,6 @@ git merge feature-x
 
 
 
-#---
-git log
-
-git log -5
-git log --author="yourname"
-git log app.py
 
 
 '''
