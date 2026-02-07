@@ -2,7 +2,7 @@
 In The name of god
 Created on Fri Feb  6 16:18:52 2026
 
-@author: apm
+@author: Ali Pilehvar Meibody
 
 Aval ye negah be AI_CLI.py bendazid ke bebinid Bash chie , Cli chie
 chijoori mishe bedone GUI , harkari bekhaym ro ba CLI bokonim.
