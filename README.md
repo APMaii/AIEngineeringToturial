@@ -64,7 +64,7 @@ AIEngineeringToturial/
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/<username>/AIEngineeringToturial.git
+   git clone https://github.com/APMaii/AIEngineeringToturial.git
    cd AIEngineeringToturial
    ```
 
