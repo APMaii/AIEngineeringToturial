@@ -6,7 +6,6 @@ In God  we trust
 ADVANCED_Class_Object.py
 
 
-
 Created on Fri Feb  6 16:13:37 2026
 
 @author: Ali Pilehvar Meibody
