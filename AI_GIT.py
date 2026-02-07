@@ -396,6 +396,52 @@ no changes added to commit (use "git add" and/or "git commit -a")
 
 
 
+'''
+Aval rajebe khode git o ina…….
+Badesh rajebe github chi bod chi nabood 
+git clone https://github.com/OWNER/REPO.git
+Vaghty password mikhad 0- token based migiri va hamchning
+
+Store plain text
+git config --global credential.helper store 
+
+git config --global credential.helper manager
+
+
+#------
+Badesh k skahtim tamom
+1-	Aval dari bad mikhay vasl koni
+Remote
+
+2-	Darish asan hamono migiri push pull mikoni Rahat
+
+
+
+
+git branch
+
+git branch feature-login
+
+
+git checkout feature-login
+OR 
+git switch feature-login
+git push -u origin feature-login
+
+
+
+git push –all
+
+git merge feature-x
+
+
+
+#---
+git log
+
+
+
+'''
 
 
 
