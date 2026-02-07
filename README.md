@@ -1,3 +1,4 @@
+
 # AI Engineering Tutorial
 
 > A comprehensive lecture series covering the full stack of AI engineering—from Python fundamentals to production systems.
@@ -5,6 +6,10 @@
 **Instructor:** Ali Pilehvar Meibody  
 **Organization:** [Fanavari Co.](https://fanavari.co)  
 **License:** MIT
+
+<p align="center">
+  <img src="ai_pic.png" alt="AI Engineering" width="600"/>
+</p>
 
 ---
 
