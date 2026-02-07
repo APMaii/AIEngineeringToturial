@@ -8,7 +8,7 @@
 **License:** MIT
 
 <p align="center">
-  <img src="apm_pic.png" alt="AI Engineering" width="600"/>
+  <img src="apm_pic.png" alt="AI Engineering" width="400"/>
 </p>
 
 ---
