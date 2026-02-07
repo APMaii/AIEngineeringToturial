@@ -439,6 +439,9 @@ git merge feature-x
 #---
 git log
 
+git log -5
+git log --author="yourname"
+git log app.py
 
 
 '''
