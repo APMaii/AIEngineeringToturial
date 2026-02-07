@@ -97,7 +97,10 @@ Agents & Databases → Linux & DevOps
 
 For questions, exercises, or collaboration:
 
-- **Telegram:** [@APMaii](https://t.me/APMaii)
+- **Email1:** [alipilehvar1999@gmail.com](alipilehvar1999@gmail.com)
+- **Email2:** [ali.pilehvarmeibody@studenti.polito.it](ali.pilehvarmeibody@studenti.polito.it)
+- **Email3:** [ali.pilehvarmeibody@epfl.ch](ali.pilehvarmeibody@epfl.ch)
+
 - **Repository:** Open issues or pull requests for contributions.
 
 ---
