@@ -11,7 +11,9 @@ Aval ye negah be AI_CLI.py bendazid ke bebinid Bash chie , Cli chie chijoori mis
 - 3-GITLAB
 baham motefavet hast
 
----
+------
+------
+------
 
 # 1- GIT
 
@@ -169,7 +171,7 @@ felan karo krdm va dalilesho bnvisi
 vase inkar. shoma taghirateto midi , mibarish tooye 'stage' --> yek marhale ghabl az taeed nahaeie, badesh mibarish taeed nahaee k esmesh hast commit.
 
 
-
+---
 #### Git status
 baraye inke bbini chia tooye 'alan' vojod dare , stage , unstage
 az dastoore --> git status --> estefade mikoni
@@ -214,7 +216,7 @@ yadet biad ino -->
 khob yani file matn.txt , readme.md tooye 'alan' hastan
 bayad bebarim tooye stage
 
-
+---
 #### Git Add
 
 ba dastoore git add in karo mikonim
@@ -248,7 +250,7 @@ Untracked files:
 mifahmim k readme.md tooye 'alan' hastan va stage nashode
 ama 'matn.txt' tooye stage hast.
 
-
+---
 #### Git Commit
 hala k matn.txt tooye stage hast , bayad bbrimesh commit nahaee 
 injas k tozih minevisi
@@ -368,7 +370,7 @@ no changes added to commit (use "git add" and/or "git commit -a")
 ```
 
 
-
+---
 #### Git store
 
 baraye bargardoondane yek file az satge too halate adi
@@ -376,7 +378,7 @@ baraye bargardoondane yek file az satge too halate adi
 git restore --staged esme_file
 ```
 
-
+---
 #### Multple Commands
 gahan bejaye inke chant achant bznim mitonim az dot (.) estefade konim
 
@@ -403,7 +405,7 @@ git restore --staged new2.py
 git restore --staged . 
 ```
 
-
+---
 #### Git Log
 mikhay hiostory commit hato bebini khob , tamame commit hato miare
 
@@ -429,14 +431,16 @@ fght baraye oon app mibine
 git log app.py
 ```
 
-
+---
 #### Git Diff
 
-
-
+---
 #### Git Others
 
 
+----
+----
+----
 ----
 
 # 2- Github
@@ -603,6 +607,8 @@ To https://github.com/APMaii/AIEngineeringToturial.git
 ------
 ------
 ------
+------
+------
 
 ###  APPENDIX A : RAHANMAYE DEVELOPER HA 
 harchi uypdate hast az github miad roo local (laptabet)
@@ -713,6 +719,12 @@ To https://github.com/APMaii/fanavari2026.git
 
 ```
 
+
+------
+------
+------
+------
+------
 
 ###  APPENDIX B : Remembering Password
 
