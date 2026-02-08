@@ -46,8 +46,8 @@ AIEngineeringToturial/
 │
 ├── AI_Python_Review.py       # L1: Python fundamentals review
 ├── ADVANCED_Class_Object.py  # L2: Advanced classes and OOP
-├── AI_CLI.py                 # L3: Command Line Interface & Shell
-├── AI_GIT.py                 # L4: Git, GitHub, version control
+├── AI_CLI.md                 # L3: Command Line Interface & Shell
+├── AI_GIT.md                 # L4: Git, GitHub, version control
 │
 ├── 02_numpy.py               # NumPy: numerical computing (placeholder)
 ├── 03_pandas.py              # Pandas: data science (placeholder)
