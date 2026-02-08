@@ -758,6 +758,10 @@ developer setting ro mibinid bznid roosh
 badesh kafie rooye personal acces token ha bznid va baz mishe va rooye token(classic) cliuck konid
 ![p token](Pictures/personal_token.png)
 
+badesh shoma mitonid bezanid k rooye generte 
+![geenrate](Pictures/generate_token.png)
+
+
 badesh mitonid inja note bzarid k yadeton bashe in token ro chra skahtid, mitonid behesh zaman bdid (choon monghazi mish) va bayad bgid cheghad mikhahid
 ![note token](Pictures/note_token.png)
 
@@ -834,5 +838,37 @@ git merge feature-x
 
 
 '''
+
+---
+---
+---
+---
+---
+
+# Kholase – Git commands quick reference
+
+| Mozoo | Dastoor | Tozihat |
+|-------|---------|-------------|
+| **Nasb** | `brew install git` | macOS (Homebrew) |
+| | `sudo apt install git` | Linux (Debian/Ubuntu) |
+| | [git-scm.com](https://git-scm.com) | Windows – download Git Bash |
+| **Shoro** | `git init` | foldere shomaro shoro mikone be nezarat |
+| **tanzimat** | `git config --global user.name 'Your Name'` | esmeton ro minevise |
+| | `git config --global user.email 'you@email.com'` | emaleton ro minevise |
+| | `git config --global --list` | configeton ro neshon mide|
+| **Status** | `git status` | beheton neshon mide chia too 'alan' ya 'stage' hast|
+| **Stage (add)** | `git add filename` | yek fil ro b stage mibrid |
+| | `git add .` |hameye file haro b stage mibarid |
+| **Commit** | `git commit -m 'description'` | sabte nahaee mikonid |
+| **Remote** | `git remote add origin https://github.com/USER/REPO.git` | folderetoon ro b githubeton vasl mikonid |
+| | `git remote -v` | beheton liste repo hae k bhsh vasle nshon mide |
+| **Push** | `git push -u origin main` | avalin bari k mikhahid hamechio befrestid github |
+| | `git push origin` / `git push origin main` | commit hatoon ro mifreste github |
+| **Pull** | `git pull origin` | akharin chizaro migire az github |
+| **Clone** | `git clone https://github.com/USER/REPO.git` | bkhahid yek repo az github begirid |
+| **Branch** | `git branch` | shakhe ha branhc haro list mikone |
+| | `git branch -M main` | Rename current branch to `main` |
+| | `git checkout branch-name` / `git switch branch-name` | Switch to a branch |
+| **Typical flow** | `git status` → `git add .` → `git commit -m 'msg'` → `git pull origin` → `git push origin` | Daily workflow |
 
 #--3-GITLAB--------
