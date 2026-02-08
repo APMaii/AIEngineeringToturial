@@ -469,7 +469,8 @@ mesle hamishe shoam kafie berid too safeye hoem githubeton va rooye new bezanid
 <img src="Pictures/new_repo.png" width="300" alt="New repo">
 
 badesh name , description hamechio misazid
-<img src="Pictures/new_repo2.png" width="300" alt="New repo2">
+
+<img src="Pictures/new_repo2.png" width="500" alt="New repo2">
 
 
 badesh kheyli sade linke repo behetoon mide k in link , dar asl linke
