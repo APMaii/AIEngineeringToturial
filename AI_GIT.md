@@ -469,12 +469,12 @@ mesle hamishe shoam kafie berid too safeye hoem githubeton va rooye new bezanid
 ![new repo](Pictures/new_repo.png)
 
 badesh name , description hamechio misazid 
-! [new repo2](Pictures/new_repo2.png)
+![new repo2](Pictures/new_repo2.png)
 
 badesh kheyli sade linke repo behetoon mide k in link , dar asl linke
 repository github hast 
 
-! [link repo](Pictures/link_repo.png)
+![link repo](Pictures/link_repo.png)
 
 vaghti repo ro sakhtim linkesh ro var midarim
 linkesh yechi mese ine *https://github.com/user name shoma / esme repo.git*
@@ -557,7 +557,7 @@ git pull origin
 harmoghe commit hato kardi va khasti befrsi github
 ```bsh
 git push origin
-```bsh
+```
 
 
 
@@ -734,23 +734,23 @@ pas aval varede githubeton beshid
 Khob aval mirid toye github , rooye samte rast profile click konid va
 setting ro entkehab konid
 
-! [Setting](Pictures/setting.png)
+![Setting](Pictures/setting.png)
 
 badesh kafie scroll konid paeen , tahe tah , samte chaop yek 
 developer setting ro mibinid bznid roosh
-! [DV](Pictures/developer_settings.png)
+![DV](Pictures/developer_settings.png)
 
 badesh kafie rooye personal acces token ha bznid va baz mishe va rooye token(classic) cliuck konid
-! [p token](Pictures/personal_token.png)
+![p token](Pictures/personal_token.png)
 
 badesh mitonid inja note bzarid k yadeton bashe in token ro chra skahtid, mitonid behesh zaman bdid (choon monghazi mish) va bayad bgid cheghad mikhahid
 ![note token](Pictures/note_token.png)
 
 badesh kafie bezanid option haro bdid , in option ha mige k ba in token , cheghadr mitond dastrssi b github dashte bashid, ag roo lapttobe khdoton has, hame tik haro bezanid rahat
-! [option token](Pictures/options_token.png)
+![option token](Pictures/options_token.png)
 
 dar enteha rooye submit bezanid va vaghty roo submit mizanid
-! [submit token](Pictures/submit_token.png)
+![submit token](Pictures/submit_token.png)
 
 hala behetoon y adad mide k hamin addad **Token** e shoma hast
 va vaghty github shoma *git pull* *git clone* ya harkari krdiid azaton
