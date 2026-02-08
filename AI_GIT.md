@@ -466,10 +466,11 @@ myprogram.py	new2.py		newprogram.py	newwwwwww.py
 
 miri dkahele github mishi , ye repo misazi (github)
 mesle hamishe shoam kafie berid too safeye hoem githubeton va rooye new bezanid
-![new repo](Pictures/new_repo.png)
+<img src="Pictures/new_repo.png" width="300" alt="New repo">
 
-badesh name , description hamechio misazid 
-![new repo2](Pictures/new_repo2.png)
+badesh name , description hamechio misazid
+<img src="Pictures/new_repo2.png" width="300" alt="New repo2">
+
 
 badesh kheyli sade linke repo behetoon mide k in link , dar asl linke
 repository github hast 
@@ -734,7 +735,8 @@ pas aval varede githubeton beshid
 Khob aval mirid toye github , rooye samte rast profile click konid va
 setting ro entkehab konid
 
-![Setting](Pictures/setting.png)
+<img src="Pictures/setting.png" width="200" alt="setting">
+
 
 badesh kafie scroll konid paeen , tahe tah , samte chaop yek 
 developer setting ro mibinid bznid roosh
