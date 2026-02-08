@@ -1,25 +1,15 @@
 """
 In The name of god
 Created on Fri Feb  6 16:18:52 2026
-
 @author: Ali Pilehvar Meibody
 
 Aval ye negah be AI_CLI.py bendazid ke bebinid Bash chie , Cli chie
 chijoori mishe bedone GUI , harkari bekhaym ro ba CLI bokonim.
-
-
 emrooz mikhaym darmorede in se ta topic harf bznim
 1-GIT
-
 2-GITHUB
-
 3-GITLAB
-
-
 baham motefavet hast
-
-
-
 """
 
 #=======================================================
@@ -27,43 +17,30 @@ baham motefavet hast
 '''
 			             1-GIT	 
 '''
-
 '''
 wifi ghate ..... local (machine) computer laptob ro fght darid
 FOLDER DARI
 .py 
 .txt
 .md 
-haroz dari taghir midi
-bad az yemah migi ey kash
-man ychi dashtam k 1-aval migof ch zamani
-kodom fiel skahyte shode
-ch zamani tahghid dade shod
-kojahash taghir dade shode
-ki taghiur dade (team)
-ey kaah noti bod -taghiri
-
+haroz dari taghir midi , bad az yemah migi ey kash
+man ychi dashtam k 1-aval migof ch zamani , kodom fiel skahyte shode
+ch zamani tahghid dade shod , kojahash taghir dade shode
+ki taghiur dade (team) , ey kaah noti bod -taghiri
 control konam folder , files
-
-version control
-control versioning
-
+version control = control versioning
 1-Nazm
 2-Harmogeh khasi mitoni b har step bargardi
 3-befahmi ki taghir dad, chi taghir dade ahode (bugg)
 4-tozihi kash bood (description)
 
-
-
 age tooye AI_CLI.py yadetoon biad ma yekserii CLI tool dashtim ke
 default boodan mesle vim (k mizasht edit bezanim )
 hala yekseri darim bayad download konim --> yeki azina git hast
 
-
 --> TOOL (abzar) ---> git
 ejaze mide shoma control bversioning
 control koni folder , fil hato
-
 
 hadaf -->
 folder sakhti, file sakhti
@@ -75,67 +52,46 @@ folder sakhti, file sakhti
 
 Linus Trovalds --> ABAR ENSAN
 3 rooz --> GIT Misaze
-
 '''
 
 
 '''
-
 ------> MOSHKEL CHIE???
-
 man koli file daram , directory (folder) va hey misazam , edit mizanam , hazf mikonam
-
 
 File ha sakhte mishe
 file ha edit mishe
 file ha hazf mishe
-
 mikham har kari k krdm sabt bshe --> sabteshon konm
-
-
 -->1- nazm daram
 -->2- midonm key chikar krdm
 --->3- hamashon zakhrian , harmoghe khastam b se rooz pish
 ---> 4.......
 
-
 ye nafarim , yechizi , y toooli , abzari --> nezarat kone
 rooye kole laptab?? na
-
 ye foldero neshon mikonm -> aghaye x ino moraghebesh bash (nexzarat kon)
-
 abzar --> git 
-
 Linus Trovalds
-
 -->systemam ---> bASH --> AI_CLI.py  cd pwd topuch ,.... | vel kon
 abzari --> git --> dare laptabam? na
 
-
-Baraye download git -->
+--------- INSTALL GIT---------
 WINDOWS --> https://git-scm.com  (default option) Git bash(terminal) --> SHELL (siah)  | abzare git
-
 macos --> terminal (bash) --> brew install git
 Linux --> Terminus,.,..(bash) ---> sudo apt install git
 
-
-
+---------Bad az install Git---------
 windows, macos, linux --> SHELL --> git mishnase 
-
-
-
-INSTALL
-
 
 bad az inke install krdid, Shell ro baz mikonid
 MAC , LINUX --> Terminal
 windows --> GIT BASH
 
-yek safe siahe --> in safe siah hamoon SHELL hast k dakhele
-AI_CLI.py goftim k chie .
+yek safe siahe --> in safe siah hamoon SHELL hast k dakhele AI_CLI.py goftim k chie .
+
 
 baraye inke motmaen beshim k git ro darim bayad in ro bznim
-
 git --version  
 
 error nadad --> rahat nasb shdoe
@@ -483,8 +439,11 @@ git log app.py
 
 
 '''
-
+#===========================================
+#===========================================
 #2- Git Hub--------
+#===========================================
+#===========================================
 
 
 '''
@@ -511,13 +470,6 @@ git hub --> hubi hast baraye git haye shoma
 
 account darim 
 vaghtyy miri repo new mizni , 
-
-
-
-
-
-
-
 
 '''
 
