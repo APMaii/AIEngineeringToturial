@@ -425,3 +425,31 @@ echo "Line 1"; echo "Line 2"   # always run both
 -----
 
 ## Bash Scripting
+
+
+
+
+------
+
+
+# APPENDIX A : Summary Bash
+
+| Command | Example / usage | Description |
+|---------|------------------|-------------|
+| **pwd** | `pwd` | Print working directory (where you are) |
+| **ls** | `ls` / `ls -l` | List files and folders in current directory |
+| **cd** | `cd folder` / `cd ..` / `cd ~` / `cd /` | Change directory; go up, home, or root |
+| **mkdir** | `mkdir my_project` | Create a folder |
+| **touch** | `touch file.txt` | Create an empty file |
+| **cat** | `cat file.txt` | View file contents |
+| **cp** | `cp source dest` | Copy file or folder |
+| **mv** | `mv old new` / `mv file.txt folder/` | Rename or move file |
+| **rm** | `rm file.txt` | Delete a file |
+| **rm -r** | `rm -r folder_name` | Delete a folder and its contents |
+| **chmod** | `chmod +x script.sh` | Change permissions (e.g. make executable) |
+| **grep** | `grep "text" file.txt` | Search for text inside files |
+| **find** | `find . -name "*.py"` | Find files by name or pattern |
+| **nano** / **vim** | `nano file.txt` / `vim file.txt` | Edit text files in terminal |
+| **exit** | `exit` | Close / quit the terminal session |
+
+# APPENDIX B : CLI Tools Summary
