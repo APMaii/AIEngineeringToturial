@@ -1307,6 +1307,10 @@ setattr(p, 'age', 26)
 
 
 # ----- delattr(object, name) -----
+'''
+hamchnin mitondi dlete konid yek attribute ro be sadegi
+'''
+
 # Delete attribute by name. Same as: del obj.name. Raises AttributeError if missing.
 delattr(p, 'city')
 # hasattr(p, 'city')  # False now
@@ -1317,6 +1321,8 @@ attr_name = 'age'
 getattr(p, attr_name)   # 25
 setattr(p, attr_name, 30)
 
+
+#hata mitonid inkar ro ham konid
 # Example: call different methods by name
 method_name = 'capitalize'
 getattr('hello', method_name)()   # 'Hello'
