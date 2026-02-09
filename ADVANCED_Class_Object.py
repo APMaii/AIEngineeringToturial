@@ -1255,18 +1255,39 @@ if p.name:
 else:
     print('is not present')
 
-    
+
 # ----- getattr(object, name [, default]) -----
 '''
+hala mitoni dbejaye inke hardafe check konid
+mitonid bejaye khode p.name az ye tabe estefade kondi bename
+getattr k miayd aval migid kodom objct , che attributi
 
+masalan
+bejaye 
+p.name
 
-
+mizanid getattr(p,'name')
 
 '''
 # Get attribute by string name. If missing and default given, return default; else AttributeError.
 getattr(p, 'name')      # 'Ali'
 getattr(p, 'age')       # 25
+
+
+'''
+Havaseton bashe ag nadashte bashe , bazam error mide in
+ama mishe yek kar krd
+mishe b onvane argumente sevome behesh begid age nadasht
+besoorate default chi bzare jash (ham error nmikhorid 
+ham dar soorat enabodanesh mitoonid bejash default bezarid)
+'''
+
+
 getattr(p, 'city', 'Tehran')   # 'Tehran' (no .city, so default used)
+
+
+
+
 
 # ----- setattr(object, name, value) -----
 # Set attribute by string name. Same as: obj.name = value
