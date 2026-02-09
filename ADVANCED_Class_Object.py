@@ -1189,4 +1189,53 @@ BANK.how_many()
 
 '''
 
+#===============================================
+# getattr, setattr, hasattr, delattr
+#===============================================
+# Built-in functions to work with object attributes by NAME (string).
+# Useful when the attribute name is dynamic or comes from user/config.
+
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+p = Person('Ali', 25)
+
+# ----- getattr(object, name [, default]) -----
+# Get attribute by string name. If missing and default given, return default; else AttributeError.
+getattr(p, 'name')      # 'Ali'
+getattr(p, 'age')       # 25
+getattr(p, 'city', 'Tehran')   # 'Tehran' (no .city, so default used)
+
+# ----- setattr(object, name, value) -----
+# Set attribute by string name. Same as: obj.name = value
+setattr(p, 'city', 'Tehran')
+setattr(p, 'age', 26)
+# now p.city is 'Tehran', p.age is 26
+
+# ----- hasattr(object, name) -----
+# True if object has that attribute (or says it has it), else False.
+hasattr(p, 'name')   # True
+hasattr(p, 'city')   # True (we set it)
+hasattr(p, 'salary') # False
+
+# ----- delattr(object, name) -----
+# Delete attribute by name. Same as: del obj.name. Raises AttributeError if missing.
+delattr(p, 'city')
+# hasattr(p, 'city')  # False now
+
+# ----- Why use them? -----
+# When the attribute name is in a variable (e.g. from config, loop, or user input):
+attr_name = 'age'
+getattr(p, attr_name)   # 25
+setattr(p, attr_name, 30)
+
+# Example: call different methods by name
+method_name = 'capitalize'
+getattr('hello', method_name)()   # 'Hello'
+
+
+
+
 
