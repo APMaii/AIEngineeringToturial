@@ -1225,7 +1225,44 @@ pas yeseri tabeye dakheli dare khode python k bema komak mikone
 
 '''
 
+
+# ----- hasattr(object, name) -----
+'''
+avalish hasattr hast k mitone check kone oon obecte shoma
+aya oon attribute ro dare ya na
+age dashte bashe True , age na False mizane
+
+ama yadeton bashe in tabe yek tabeye dakhelie k narenji mishe
+
+arguemnte aval object , argumente dovom str migrie
+khob injorie :
+
+'''
+# True if object has that attribute (or says it has it), else False.
+hasattr(p, 'name')   # True
+hasattr(p, 'city')   # True (we set it)
+hasattr(p, 'salary') # False
+
+
+'''
+
+pas ghabl az inke bezanid p.name bayad check konid
+
+'''
+
+if p.name:
+    print(f'{p.name} is present')
+else:
+    print('is not present')
+
+    
 # ----- getattr(object, name [, default]) -----
+'''
+
+
+
+
+'''
 # Get attribute by string name. If missing and default given, return default; else AttributeError.
 getattr(p, 'name')      # 'Ali'
 getattr(p, 'age')       # 25
@@ -1237,11 +1274,7 @@ setattr(p, 'city', 'Tehran')
 setattr(p, 'age', 26)
 # now p.city is 'Tehran', p.age is 26
 
-# ----- hasattr(object, name) -----
-# True if object has that attribute (or says it has it), else False.
-hasattr(p, 'name')   # True
-hasattr(p, 'city')   # True (we set it)
-hasattr(p, 'salary') # False
+
 
 # ----- delattr(object, name) -----
 # Delete attribute by name. Same as: del obj.name. Raises AttributeError if missing.
