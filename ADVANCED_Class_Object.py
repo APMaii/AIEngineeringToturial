@@ -1290,6 +1290,15 @@ getattr(p, 'city', 'Tehran')   # 'Tehran' (no .city, so default used)
 
 
 # ----- setattr(object, name, value) -----
+'''
+hamchenin bejaye inke biayn value gozari konid oon attribute ro 
+bejaye inke benevisid
+
+p.city = 'Tehran'
+
+mitonid biayd az tabete setattr estefade kone
+
+'''
 # Set attribute by string name. Same as: obj.name = value
 setattr(p, 'city', 'Tehran')
 setattr(p, 'age', 26)
