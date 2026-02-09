@@ -1192,8 +1192,14 @@ BANK.how_many()
 #===============================================
 # getattr, setattr, hasattr, delattr
 #===============================================
-# Built-in functions to work with object attributes by NAME (string).
-# Useful when the attribute name is dynamic or comes from user/config.
+'''
+Khob mikhaym darmorede getattr , setattr , hasattr , delattr hgarf bznim
+
+bebinid vaghty shoma yek class daird kheyli sade mitonid
+ba seda zadane khdoe object va roosh dot beznaid va b attribute dastresi poeyda konid 
+masalan
+
+'''
 
 class Person:
     def __init__(self, name, age):
@@ -1201,6 +1207,23 @@ class Person:
         self.age = age
 
 p = Person('Ali', 25)
+
+'''
+
+age name ya age ro bekhayd khetli sade
+
+p.age
+p.name
+p.city
+
+ama vaghty miayd tooye neveshtane application nabayad
+risk konid choon momkene moshkel ijad she vaghty mikhayd 
+az ye obejct chizi bekeshid , momkene esmehs ghalat bashe
+khdoesh ghalat absh e, ya nadashte bashe
+
+pas yeseri tabeye dakheli dare khode python k bema komak mikone
+
+'''
 
 # ----- getattr(object, name [, default]) -----
 # Get attribute by string name. If missing and default given, return default; else AttributeError.
