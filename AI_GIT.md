@@ -12,6 +12,9 @@ Aval ye negah be AI_CLI.py bendazid ke bebinid Bash chie , Cli chie chijoori mis
 baham motefavet hast
 
 
+
+
+
 ------
 ------
 ------
