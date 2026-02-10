@@ -369,14 +369,127 @@ no changes added to commit (use "git add" and/or "git commit -a")
 (base) apm@APMs-MacBook-Pro ai_engineering_test % 
 ```
 
+---
+#### Git Log
+Khob ma inhame hame taghiratemon ro ba tozihat koja sabt mikonim?
+aslan mikhaym bbinim chijori bebinim?
+
+mikhay hiostory commit hato bebini khob , tamame commit hato miare
+
+
+```bsh
+git log
+```
+tamame commit hato miare
+commit hash (ID) ,  author , date , message
+
+vase inke biaym biron azash :wq bznim miad biroon 
+
+
+
+5 ta loge akahr
+```bsh
+git log -5
+```
+
+filter mikone by nevisdande
+```bsh
+git log --author="yourname"
+```
+
+
+fght baraye oon app mibine
+```bsh
+git log app.py
+```
+
 
 ---
-#### Git store
+#### Git Diff
+ino ag bznim mige daghighan chia tagghiir karde
+
+```bsh
+(base) apm@APMs-MacBook-Pro AIEngineeringToturial % git diff
+diff --git a/AI_GIT.md b/AI_GIT.md
+index 5b2b28c..35407d6 100644
+--- a/AI_GIT.md
++++ b/AI_GIT.md
+@@ -369,9 +369,43 @@ no changes added to commit (use "git add" and/or "git commit -a")
+ (base) apm@APMs-MacBook-Pro ai_engineering_test % 
+ ```
+ 
++---
++#### Git Log
++Khob ma inhame hame taghiratemon ro ba tozihat koja sabt mikonim?
++aslan mikhaym bbinim chijori bebinim?
++
++mikhay hiostory commit hato bebini khob , tamame commit hato miare
++
++
++```bsh
++git log
++```
++tamame commit hato miare
++commit hash (ID) ,  author , date , message
++
+:
+```
+
+
+
+
+
+---
+#### Git restore
+
+Hamoontor k goftim ma se marhale darim
+**ALAN** --> **STAGE** --> **COMMIT**
+
+khob ag bkhaym bbinim chia too alan hast , chia too stage hast kafie
+bezanim *git status* 
+oonae k dar **alan** hastan har taghiri bkhayd bdid kafie bznid
+```bsh
+git restore file.txt
+```
+
+onaee k **stage** shodan ro gahan mikhayn bareshon grdonid va y taghhir
+dg bedid ghabel submit. 
+
+pas yadeton bashe ag chizi bkhayd az **alan** b **stage** bfrestid az *git add* 
+estefade mikonid, ama age bkhayd chizi ro az **stage** b **alan** bargardonid az *git restor --staged*
+
 
 baraye bargardoondane yek file az satge too halate adi
 ```bsh
 git restore --staged esme_file
 ```
+
+
+age bkhayd yechizi k commit shode ro hazf konid ya undo konid
+
+Undo a commit (but keep changes)
+
+```bsh
+git reset --soft HEAD~1
+```
+
+
+-----
+
+#### Time Travel (Read-Only Mode)
+
+shoma ag ye commiti kardid mikhjayd b hamon moghe baragrdid
+bebinid file haton chijori boodan kafie az zir estefade kondi
+```bsh
+git checkout <commit-hash>
+```
+
+va ag khastid rahat bargardi dar lahze ee k hastid (akahrin jaygah)
+
+```bsh
+git checkout main
+```
+
 
 ---
 #### Multple Commands
@@ -405,34 +518,7 @@ git restore --staged new2.py
 git restore --staged . 
 ```
 
----
-#### Git Log
-mikhay hiostory commit hato bebini khob , tamame commit hato miare
 
-```bsh
-git log
-```
-tamame commit hato miare
-
-
-5 ta loge akahr
-```bsh
-git log -5
-```
-
-filter mikone by nevisdande
-```bsh
-git log --author="yourname"
-```
-
-
-fght baraye oon app mibine
-```bsh
-git log app.py
-```
-
----
-#### Git Diff
 
 ---
 #### Git Others
@@ -784,6 +870,7 @@ save mishe va khialeton rahate
 git config --global credential.helper manager
 ```
 or
+
 ```bsh
 git config --global credential.helper store 
 ```
@@ -793,51 +880,249 @@ git config --global credential.helper store
 
 
 
+---
+---
+---
+
+## Branches
+
+Khob shayad az khodeton beprosid ag ma yek new feature (vizhegi jadid) bekhayd
+besazid chikar konid? chijori berid jolo?
+khob git mige man yechizi drm bename branch( shakhe)
 
 
-'''
-Aval rajebe khode git o ina…….
-Badesh rajebe github chi bod chi nabood 
-git clone https://github.com/OWNER/REPO.git
-Vaghty password mikhad 0- token based migiri va hamchning
-
-Store plain text
-git config --global credential.helper store 
-
-git config --global credential.helper manager
-
-
-#------
-Badesh k skahtim tamom
-1-	Aval dari bad mikhay vasl koni
-Remote
-
-2-	Darish asan hamono migiri push pull mikoni Rahat
-
-
-
-
+kafie bebinid k aya darid ya na 
+```bsh
 git branch
+```
+in neshoon mide aya branch darid ya na
 
-git branch feature-login
+ag shoma yek folder local sakhtid va hanzo b remote (origin) github vasl nkrdid
+khob bznid hichi nmiare yani bayad khode branch main ro besazid
+
+ama age shoma github vasl krde bashdi (khodesh sakhte baraye shoma)
+
+baraye sakhtane yek branch kafie az commande zir estefade krd
+```bsh
+git branch feature_name
+```
+khob ag shoam main ro ndshte bashid yani folder khali bashe
+vaghty readme.md file ro misazid o avalin commit ro miznid shoma rasman
+branch main ro darid
 
 
-git checkout feature-login
-OR 
+masalan bbinid man ye file msiazam va mibinim k 
+
+```bsh
+(base) apm@APMs-MacBook-Pro desktop % mkdir newproject
+(base) apm@APMs-MacBook-Pro desktop % cd newproject
+(base) apm@APMs-MacBook-Pro newproject % pwd
+/Users/apm/desktop/newproject
+(base) apm@APMs-MacBook-Pro newproject % git init
+Initialized empty Git repository in /Users/apm/Desktop/newproject/.git/
+(base) apm@APMs-MacBook-Pro newproject % git branch
+
+```
+yani vaghty misazid hich branchi nadarid , khob biayd ye read me besazim
+
+```bsh
+(base) apm@APMs-MacBook-Pro newproject % touch README.md
+(base) apm@APMs-MacBook-Pro newproject % git branch
+```
+bazam mibinid ndrim , pas bayad hatman commit konim va bad az avalin
+commit skahte msihe
+
+```bsh
+(base) apm@APMs-MacBook-Pro newproject % git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	README.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+(base) apm@APMs-MacBook-Pro newproject % git add README.md
+(base) apm@APMs-MacBook-Pro newproject % git commit -m 'avalin commit '
+[main (root-commit) 983d63f] avalin commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 README.md
+(base) apm@APMs-MacBook-Pro newproject % git branch
+* main
+```
+
+
+
+
+khob hala bkhayd branch e dg ee besazid kafie benevisid
+
+```bsh
+git branch branch_name
+```
+
+masalan
+```bsh
+(base) apm@APMs-MacBook-Pro newproject % git branch fanavari
+```
+
+hala brim liste branch haro bbinim
+```bsh
+(base) apm@APMs-MacBook-Pro newproject % git branch
+  fanavari
+* main
+```
+
+hamchnin inja vaghty az **git branch** estefade mikonid daghighan mige
+k roo kodom branch hastid va kenaresh * mizane
+
+baraye inke brid oon yeki banch mitonid az do ravesh estefade konid ya
+
+```bsh
+git checkout name
+```
+ya inke
+
+```bsh
+git switch name
+```
+
+
+
+bebinid 
+```bsh
+(base) apm@APMs-MacBook-Pro newproject % git checkout fanavari
+Switched to branch 'fanavari'
+(base) apm@APMs-MacBook-Pro newproject % git branch
+* fanavari
+  main
+```
+
+ya
+
+```bsh
+(base) apm@APMs-MacBook-Pro newproject % git switch fanavari
+Switched to branch 'fanavari'
+(base) apm@APMs-MacBook-Pro newproject % git branch
+* fanavari
+  main
+```
+
+khob hala kheyli rahat mirid brancheton ro skahtid roosh mirid
+va shoro mikonid harkari dost dashtin mikonid rooye branchetoon
+va harchi commit miznid oonja sabt msihe
+
+---
+---
+---
+
+## Merging Branches
+vaghty kareton tamom shod hame testaro grftid
+mitonid kh rahat oon branche k sakhtid masalan esmesh hast (feature)
+berizi hamasho b main va khob taghirateton emal bshe
+
+
+aval motmane shdi k rooye oon branchi hasti k gharare y branch dg roosh merge she, mamnolan main hast
+
+```bsh
+git switch main
+```
+badesh hala merge konid rahat
+```bsh
+git merge feature
+```
+
+
+
+---
+---
+---
+
+### Pull , Push Branches
+yadeton bashe ke
+Local = your work
+Remote = everyone’s work
+
+hamishe yadeton bashe vaziato check konid
+```bsh
+git status
+```
+
+ghabl az kareton hamishe pull konid code ro
+
+
+
+ama ag bsorate khas fght yedone ro mikhayd
+yani aval brid too branch bad pull konid
+```bsh
+git switch main
+git pull origin main
+```
+
+ag rooye yek branche khas kar mikonid oon ro pull konid
+aval brid too branchetone bad
+```bsh
+git switch feature
+git pull origin feature
+```
+
+
+####case haye khas
+
+**pishrafte tare inkar
+ag mikhayd kole branch ha baham update she
+```bsh
+git fetch --all
+```
+This downloads updates for all remote branches but does not merge them locally
+```bsh
+git switch branch-name
+git merge origin/branch-name
+```
+
+
+
+Sometimes main has updates and you want them in your branch
+```bsh
 git switch feature-login
-git push -u origin feature-login
+git pull origin main
+```
+
+This merges main into your branch → safe
+Or, if using rebase (cleaner history):
+
+```bsh
+git pull --rebase origin main
+```
 
 
 
-git push –all
 
-git merge feature-x
+#### Pushing Scenarios
+
+Push current branch to remote (same branch)
+
+```bsh
+git switch feature-login
+git push origin feature-login
+```
 
 
 
+Push main branch
+```bsh
+git switch main
+git push origin main
+```
 
 
-'''
+
+**CASE KHAS**
+push all branches
+```bsh
+git push --all origin
+```
+
 
 ---
 ---
@@ -870,5 +1155,7 @@ git merge feature-x
 | | `git branch -M main` | Rename current branch to `main` |
 | | `git checkout branch-name` / `git switch branch-name` | Switch to a branch |
 | **Typical flow** | `git status` → `git add .` → `git commit -m 'msg'` → `git pull origin` → `git push origin` | Daily workflow |
+
+
 
 #--3-GITLAB--------
