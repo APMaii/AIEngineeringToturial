@@ -11,6 +11,7 @@ Aval ye negah be AI_CLI.py bendazid ke bebinid Bash chie , Cli chie chijoori mis
 - 3-GITLAB
 baham motefavet hast
 
+
 ------
 ------
 ------
@@ -74,6 +75,7 @@ in your terminal (bash)
 ```bsh
 brew install git
 ```
+
 #### Linux
 in your Terminus,.,..(bash) -
 ```bsh
@@ -545,6 +547,7 @@ vaghtyy miri repo new mizni ,
 
 
 ## Option 1 : first local , then github repo
+zamni k ma migim readme.md nasaz
 yek folder tooye laptabet sakhti, hala mikhagy vaslesh koni b github
 
 
@@ -613,10 +616,14 @@ github
 
 
 
-## Option2 : first github then local (company)
+## Option 2 : first github then local (company)
 zamani hast k code hast , mikhaysh biarish too lcoalet
 (zamani k code sherkate) khode githube
 
+![cloning](Pictures/clone_pic.png)
+
+copy mikoni linko va linko mizni
+git clone linke
 ```bsh
 git clone https://github.com/APMaii/AIEngineeringToturial.git
 ```
