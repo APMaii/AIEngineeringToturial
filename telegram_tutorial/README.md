@@ -386,6 +386,64 @@ khob ta alan vorodi haee k momken bod user behemon bede , **command** bod mesle 
 behesh migan **callbackquery**
 
 
+khob pas ma bayad yek tabe besazim k baid handle kone k vaghty k in goziine ha az tarafe user entkehab shod, ya behtre begim vaghty erssal mishe be samte python , bayad oono begirim. ama mesle gahbl ke **message** mirft tooye **update.message.text** inja ghaziash frgh mikone
+
+
+```python
+async def callback_func(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    query = update.callback_query
+    query.answer()
+    if query.data=='opt1':
+        #await update.message.reply_text('you selected option 1')
+        await query.edit_message_text(text='شما گزینه یک رو انتخاب کردید')
+    elif query.data=='opt2':
+        #await update.message.reply_text('you selected option 2')
+        await query.edit_message_text(text='شما گزینه دو رو انتخاب کردید')
+```
+khob **update** too delesh yechizi dare be esme **callback_query** too delesh hast va oono mikeshim biron mirizim toye ye zarf b esme **query**
+hamchnin vaghty miznim **query.answer()** yani montzre ta javab bde trf
+
+khob too dele **query** ye chizi darim bname **data** in hamon chizzi has k vaghty user roo y dokme click bzne ag yadeton bashe tooye tarife dokme omdim yechize **mokhafaf** onja behine krdim
+
+
+```python
+[InlineKeyboardButton("گزینه 1", callback_data="opt1")],
+        [InlineKeyboardButton("گزینه 2", callback_data="opt2")],
+```
+
+pas ag trf rooye gozine 1 bzne. **query.data** mishe opt1 va age taraf gozine 2 ro bzne **query.data** mishe opt2 . ba yek if o elif o in mitonim kh sade begim ag felan gozien ro ch konim.
+fght inja bejay einke baraye send message b user bejaye **update.message.reply_text** miaym az chizi estefade mikonim bename **query.edit_message_text**.
+
+
+khob hala in tabe k sakhtim ro miaym b appllcisaation add mikonim. inja bejaye messagehandler ya commmandhandler az yek handler e dg estefgade mikonim
+
+
+
+```python
+from telegram.ext import CallbackQueryHandler
+
+
+application.add_handler(CallbackQueryHandler(callback_func))
+
+```
+
+
+baraye kamel mitonim az ![telegram_test5.py](/telegram_tutorial/telegram_test5.py)
+
+kafie shoam run bznid
+```bsh
+python telegram_test5.py
+```
+
+avl fucntion menu gozine haro miare vaghty roosh bznid oon mokhgafafo mifrse b callbackquery handler
+![menu](/telegram_tutorial/tutorial_pictures/gozine.jpg)
+
+
+khob halaa  ma az query.edit_message estefade mikonim k gozine haro edit mizne va messasge mikone
+![javab](/telegram_tutorial/tutorial_pictures/callback.jpg)
+
+
+
 
 
 
