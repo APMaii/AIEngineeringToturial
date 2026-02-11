@@ -652,6 +652,8 @@ tabeye load_dotenv() k az ketabkhone dotnev hast, ejaze mide k dotenv biad bala
 ba **os** vasl mishid b .env va khob 'token' yani b token vasl shod meghdaresho beriz tooye ye
 zarf bename TOKEN. va injori kheyli safe hastid
 
+ma daghighan haminkar ro omdim file e ![telegram_test6.py](/telegram_tutorial/telegram_test6.py) ro besoorate safe va amn neveshtim dar ![telegram_test7.py](/telegram_tutorial/telegram_test7.py)
+
 
 **more advanced
 haavseton bashe vaghty github mikhayd bznid
@@ -692,4 +694,19 @@ bad dg save konid khial rahat
 ----
 ----
 ----
-#Appendix D : Summary
+# Appendix D : Summary
+
+| Topic | Description | Key imports / components | Example file |
+|-------|-------------|--------------------------|--------------|
+| **Telegram setup** | Create bot via @BotFather, get token; name must end with `bot` | Token from BotFather | — |
+| **Python setup** | Install library, use `main()` and `if __name__ == "__main__"` | `pip install python-telegram-bot` | — |
+| **Application core** | Build app, add handlers, error handler, run polling | `Application.builder().token(TOKEN).build()`, `run_polling()` | — |
+| **Error handler** | Always define and register to catch errors | `ContextTypes`, `application.add_error_handler()` | — |
+| **Command Handler** | User sends `/command` (e.g. `/start`, `/help`) | `CommandHandler('cmd', func)`, `update.message.reply_text()` | telegram_test1.py, telegram_test2.py |
+| **Message Handler** | User sends plain text (not command) | `MessageHandler(filters.TEXT, func)`, `update.message.text` | telegram_test3.py |
+| **Inline Keyboards** | Show buttons instead of only text | `InlineKeyboardButton`, `InlineKeyboardMarkup`, `reply_markup` | telegram_test4.py |
+| **CallbackQuery Handler** | User taps an inline button; handle by `callback_data` | `CallbackQueryHandler`, `update.callback_query`, `query.data`, `query.edit_message_text()` | telegram_test5.py |
+| **Conversation Handler** | Multi-step flow: entry → states → next state or END | `ConversationHandler`, `entry_points`, `states`, `return 'STATE'`, `ConversationHandler.END` | telegram_test6.py |
+| **Async pattern** | Handlers are async; use `await` for sending/editing | `async def`, `await` | Appendix A |
+| **Tokens / .env** | Keep token out of code; load from `.env` | `python-dotenv`, `load_dotenv()`, `os.getenv('TOKEN')` | Appendix B |
+| **.gitignore** | Never commit `.env`; add `.env` and `*.env` to `.gitignore` | — | Appendix B |
