@@ -328,8 +328,62 @@ mibinim k
 
 ---
 ## 2.5-Inlinekeyboards
+khob ma ta alan balad shodim k az command handler estefade konim o message handler estefade konim . yani ag kasi ta alan bema command ferestad mesle **/start** ya inke bema **message** dad ma behesh ba **message** javab midadim ama khob aya hamishe ma mitonim message bdim? nmitonim b form haye dg javab bdim?
+bale yeki az in rah ha ine ke behesh gozine neshoon bdim.
+
+khob chijori? bayad gozine ro besazim. yani too oon tabe ee k ma handl emikonim , bejaye estefade az **update.message.reply_text()** bayad yekar konim bejaye **text** be trf gozine neshoon bde. 
+
+```python
+from telegram import InlineKeyboardButton, InlineKeyboardMarkup
+
+async def menu_func(update: Update, context: ContextTypes.DEFAULT_TYPE):
+
+    #await update.message.reply_text('menu : menu1 , menu2 --> TEXT')
+    keyboard = [
+        #yek chizi k b user namayesh mdie, ba y mokhafaf
+        [InlineKeyboardButton("گزینه 1", callback_data="opt1")],
+        [InlineKeyboardButton("گزینه 2", callback_data="opt2")],
+        #ezafe kon
+
+    ]
+    reply_markup = InlineKeyboardMarkup(keyboard)
+    #hala to gozine haro sakhti --> bfrsi baraye ?? baraye user
+    await update.message.reply_text('لطفا یک گزینه انتخاب کن',reply_markup =reply_markup )
+
+```
+
+tanha farghesh ine shoam yek zarf misazid bename keybord k yek **list** hast ke toosh **list** haee hast. too har **list** mitonid az class **InlinekeyboardButton** estefade konid ye aval oon chizi k mikhayd b user namayesh bede, va poshtesh y mokhafafe englisi mizarid
+
+kole in **keyboard** k yek list k az list ha bood ro mindazid tooye **InlinekeyboardMarkup** va miriz y zarfe dg .
+
+fght chizi k hast vaghty az **update.message.reply_text** estefade mikonid kenare textoon bayad az yek argument ya vorodie dg ee etsfeade konid bename **reply_markup** k ejaze mide .
+
+khob hala hamchin chizio ma dairm
+hala ino mitonid b soorate **message_handler** ya biad **command_handler** estefade konid.
+
+```python
+application.add_handler(CommandHandler('menu',menu_func))
+```
 
 
+mesale kamelsh dakhele ![telegram_test4.py](/telegram_tutorial/telegram_test4.py) mojod hast.
+baraye run kafie bezanid
+
+```bsh
+python telegram_test4.py
+```
+
+va mibinid k vaghty rooye **menu** miznid choon commandhanlder has mifreste be tabeye **menu_func** va dar in tabe bejaye update.message.reply_text e khali , hamrahesh yek **markup** ferstadim , yani gozine ha. 
+
+![menu](/telegram_tutorial/tutorial_pictures/menu.jpg)
+
+hamontori k mibinid vaghty roo gozine ha bezanid hich javabi daryaft nmikonid . chraa???
+
+
+---
+## 3-Callbackquery handler
+khob ta alan vorodi haee k momken bod user behemon bede , **command** bod mesle /start , /menu , /help va baghie , ya mitones kheyliu sade behemoon **message** bede va baraye hamashon miomdim az **handler** makhsoseshon estefade mikrdim mesle **commandhandler** ya **messagehandler** ama ag ma baraye taraf bejaye **text** e khali, biaym **Markup** ya gozine befresim , vaghtyy trf entkehab mikone , chi baramon ersal mishe?? 
+behesh migan **callbackquery**
 
 
 
