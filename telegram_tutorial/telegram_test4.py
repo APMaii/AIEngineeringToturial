@@ -69,7 +69,6 @@ async def echo(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup
-from telegram.ext import CallbackQueryHandler
 
 
 
