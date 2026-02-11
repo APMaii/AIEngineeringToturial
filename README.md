@@ -21,19 +21,13 @@ This repository contains lecture materials and implementations for a professiona
 
 ## Curriculum Structure
 
-| Module | Topic | Description |
-|--------|-------|-------------|
-| **01** | Python Review | Variables, types, control flow, functions, classes, iterables |
-| **02** | Advanced OOP | Object-oriented design, `@property`, `@staticmethod`, `@classmethod`, encapsulation |
-| **03** | CLI & Shell | Bash, navigation, file management, text editors (vim/nano), networking tools |
-| **04** | Git & Version Control | Local versioning, staging, commits, GitHub, project supervision |
-| **05** | NumPy | Numerical computation, arrays, broadcasting, linear algebra |
-| **06** | Pandas | Data science, DataFrames, I/O, analysis, preprocessing |
-| **07** | Matplotlib | Data visualization, plots, charts, figures |
-| **08** | Machine Learning | Models, training, evaluation, scikit-learn |
-| **09** | Deep Learning | Neural networks, frameworks, training pipelines |
-| **10** | Agents & Databases | AI agents, database integration, workflows |
-| **11** | Linux & DevOps | System administration, permissions, scripting, deployment |
+| Module | Topic | Description | File |
+|--------|-------|-------------|------|
+| **01** | Python Review | Variables, types, control flow, functions, classes, iterables | [AI_Python_Review.py](AI_Python_Review.py) |
+| **02** | Advanced OOP | Object-oriented design, `@property`, `@staticmethod`, `@classmethod`, encapsulation | [ADVANCED_Class_Object.py](ADVANCED_Class_Object.py) |
+| **03** | CLI & Shell | Bash, navigation, file management, text editors (vim/nano), networking tools | [AI_CLI.md](AI_CLI.md) |
+| **04** | Git & Version Control | Local versioning, staging, commits, GitHub, project supervision | [AI_GIT.md](AI_GIT.md) |
+| **05** | Telegram Bots | Bot setup, handlers (command, message, callback), inline keyboards, conversation flow | [telegram_tutorial/](telegram_tutorial/README.md) |
 
 ---
 
@@ -44,18 +38,15 @@ AIEngineeringToturial/
 ├── README.md
 ├── LICENSE
 │
-├── AI_Python_Review.py       # L1: Python fundamentals review
-├── ADVANCED_Class_Object.py  # L2: Advanced classes and OOP
-├── AI_CLI.md                 # L3: Command Line Interface & Shell
-├── AI_GIT.md                 # L4: Git, GitHub, version control
+├── AI_Python_Review.py       # 01: Python fundamentals review
+├── ADVANCED_Class_Object.py  # 02: Advanced classes and OOP
+├── AI_CLI.md                 # 03: Command Line Interface & Shell
+├── AI_GIT.md                 # 04: Git, GitHub, version control
 │
-├── 02_numpy.py               # NumPy: numerical computing (placeholder)
-├── 03_pandas.py              # Pandas: data science (placeholder)
-├── 04_matplotlib.py          # Matplotlib: visualization (placeholder)
-├── 05_machine_learning.py    # Machine learning (placeholder)
-├── 06_deep_learning.py       # Deep learning (placeholder)
-├── 07_agents_databases.py    # Agents & databases (placeholder)
-└── 08_linux_devops.py        # Linux & DevOps (placeholder)
+└── telegram_tutorial/        # 05: Telegram bots (python-telegram-bot)
+    ├── README.md
+    ├── telegram_server.py
+    └── telegram_test1.py … telegram_test7.py
 ```
 
 ---
