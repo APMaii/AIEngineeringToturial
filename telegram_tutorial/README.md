@@ -205,7 +205,7 @@ a--> che commandi zadan
 b--> b ch functioni vaslesh kone
 
 
-khob pas harki rooye start bezane barash in payam mire, kole code kamel dakhele ![telegram_test1.py](/telegram_tutorial/telegram_test1.py) mojood hast.
+khob pas harki rooye start bezane barash in payam mire, kole code kamel dakhele [telegram_test1.py](/telegram_tutorial/telegram_test1.py) mojood hast.
 
 
 hala ag brim va runesh konim kafie ba python runesh konim code ro
@@ -245,7 +245,7 @@ application.add_handler(CommandHandler('help',help_func))
 ```
 
 
-code kamel dakhele ![telegram_test2.py](/telegram_tutorial/telegram_test2.py) mojod hast.
+code kamel dakhele [telegram_test2.py](/telegram_tutorial/telegram_test2.py) mojod hast.
 
 shoma kafie in ro run konid
 ```bsh
@@ -313,7 +313,7 @@ async def text_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
 ba estefade az **update.message.text** miaym va harfe user ro mirizm too zarf , bad miaym ba if elif else migim ag felan bod felan javab bde , felan bod felano javab bde. javab dadna ham k mesle ghabel bayad az **update.message.reply_text** estefade konim.
 
 
-khob hamin ro ma omdim piade sazi kridm dar ![telegram_test3.py](/telegram_tutorial/telegram_test3.py)
+khob hamin ro ma omdim piade sazi kridm dar [telegram_test3.py](/telegram_tutorial/telegram_test3.py)
 
 hala ag runesh konim
 
@@ -366,7 +366,7 @@ application.add_handler(CommandHandler('menu',menu_func))
 ```
 
 
-mesale kamelsh dakhele ![telegram_test4.py](/telegram_tutorial/telegram_test4.py) mojod hast.
+mesale kamelsh dakhele [telegram_test4.py](/telegram_tutorial/telegram_test4.py) mojod hast.
 baraye run kafie bezanid
 
 ```bsh
@@ -428,7 +428,7 @@ application.add_handler(CallbackQueryHandler(callback_func))
 ```
 
 
-baraye kamel mitonim az ![telegram_test5.py](/telegram_tutorial/telegram_test5.py)
+baraye kamel mitonim az [telegram_test5.py](/telegram_tutorial/telegram_test5.py)
 
 kafie shoam run bznid
 ```bsh
@@ -578,7 +578,7 @@ async def key_func(update: Update, context: ContextTypes.DEFAULT_TYPE):
 besadegie tamam.
 
 
-hala kolesho ma dakhele file ![telegram_test6.py](/telegram_tutorial/telegram_test6.py) darim k mitonid ba dastore zir runesh konid
+hala kolesho ma dakhele file [telegram_test6.py](/telegram_tutorial/telegram_test6.py) darim k mitonid ba dastore zir runesh konid
 
 ```bsh
 python telegram_test6.py
@@ -605,7 +605,7 @@ wait --> await
 ----
 ----
 ----
-#Appendix B : TOKENS
+# Appendix B : TOKENS
 Kolan yadetoon bashe k tooye code haye khdoetoon **password** , **token** va baghie chiz haye khososi ro mostaghim nazarid.
 pas chikar konim?
 kafie yek file i besazid bename .env daghighan hamoonjae k file e pythoneton hast
@@ -652,7 +652,7 @@ tabeye load_dotenv() k az ketabkhone dotnev hast, ejaze mide k dotenv biad bala
 ba **os** vasl mishid b .env va khob 'token' yani b token vasl shod meghdaresho beriz tooye ye
 zarf bename TOKEN. va injori kheyli safe hastid
 
-ma daghighan haminkar ro omdim file e ![telegram_test6.py](/telegram_tutorial/telegram_test6.py) ro besoorate safe va amn neveshtim dar ![telegram_test7.py](/telegram_tutorial/telegram_test7.py)
+ma daghighan haminkar ro omdim file e [telegram_test6.py](telegram_tutorial/telegram_test6.py) ro besoorate safe va amn neveshtim dar [telegram_test7.py](telegram_tutorial/telegram_test7.py)
 
 
 **more advanced
@@ -687,7 +687,7 @@ bad dg save konid khial rahat
 ----
 ----
 ----
-#Appendix C : Advanced Topics
+# Appendix C : Advanced Topics
 
 
 
@@ -707,6 +707,7 @@ bad dg save konid khial rahat
 | **Inline Keyboards** | Show buttons instead of only text | `InlineKeyboardButton`, `InlineKeyboardMarkup`, `reply_markup` | telegram_test4.py |
 | **CallbackQuery Handler** | User taps an inline button; handle by `callback_data` | `CallbackQueryHandler`, `update.callback_query`, `query.data`, `query.edit_message_text()` | telegram_test5.py |
 | **Conversation Handler** | Multi-step flow: entry → states → next state or END | `ConversationHandler`, `entry_points`, `states`, `return 'STATE'`, `ConversationHandler.END` | telegram_test6.py |
+| **SECURE DOTENV** | Secure Multi-step flow: entry → states → next state or END | `load_dotenv()` | telegram_test7.py |
 | **Async pattern** | Handlers are async; use `await` for sending/editing | `async def`, `await` | Appendix A |
 | **Tokens / .env** | Keep token out of code; load from `.env` | `python-dotenv`, `load_dotenv()`, `os.getenv('TOKEN')` | Appendix B |
 | **.gitignore** | Never commit `.env`; add `.env` and `*.env` to `.gitignore` | — | Appendix B |
