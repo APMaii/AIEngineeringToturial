@@ -444,6 +444,145 @@ khob halaa  ma az query.edit_message estefade mikonim k gozine haro edit mizne v
 
 
 
+---
+## CONVERSATION HANDLER
+ma kh vaghta miaym az yek concept estefade mikonim bename **conversation handler** yani miaytm az chizaee k az bala yad grfitm mesle command handler o message handlero o callbackquery estefade mikonim.
+
+yani ye bot migim koli command dare, harki har command ro zad vrede ye kanal, y dariche , ye **conversation** , yek goftogoo beshe k in **conversatyion** shamele command handler, message handler, callbackquery hast . 
+
+baraye inkar shoma bayad yek tabe **command handler** dashte bashid va baghiu
+
+
+```python
+from telegram.ext import ConversationHandler
+application.add_handler(ConversationHandler(entry_points=[CommandHandler('dashboard',dashboard_func)],
+                                                            states={
+                                                                'NAME':[MessageHandler(filters.TEXT,name_func)],
+                                                                'AGE':[MessageHandler(filters.TEXT,age_func)],
+                                                                'KEY':[CallbackQueryHandlerß(key_func)]
+                                                            },
+                                                            fallbacks=[])  ) 
+
+```
+bebinid inja b applicatin, ma add mikonim ye handler bename Conversationhandlr, toosh yechi dare bename **entry_points** k yani shjoroe ma chie, shoroe in conversation chie , ba yek command hsoro mishe masalan migim k yechi darim bename **dashboard** darim k b function dashbaord_func vasl mishe. va in tabe ha b ham dg vaslan b tgartib az tarigeh yechi bename **state**
+
+
+```python
+async def dashboard_func(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    #vaghtyy trf zad dashboard --> in matno barash bfrs
+    #await update.message.reply_text('salam khoosh oomadin')
+
+    #
+    dashboard_text = f"""
+    سلام اسمتون رو بفرمایید :‌
+    """
+    await update.message.reply_text(dashboard_text)
+
+    #mikham bedamesh b ye tabe dggg
+    return 'NAME'
+
+```
+![dashboard](/telegram_tutorial/tutorial_pictures/dashboard.jpg)
+
+in yani vaghty kasi rooye **/dashboard** mizane tabeey **dashboard_func** seda mikkhoe k toosh b taraf mige salam esmetoon ro befarmaeed , fght farghi k dare tahesh ma ychzii dari **return 'NAME'** ro barmigrdone.
+
+**bejaye NAME , shoma harchi mitonid bezarid, adad, 0 , 1 , 2 harchi mikhayd** 
+koja estefade mishe?? tooye khdoe main() ag bbinid neveshti daghigh
+```python
+states={
+        'NAME':[MessageHandler(filters.TEXT,name_func)],
+```
+yani harmoghe oon tabe he return dad yani vghty NAME ro dad, in mige NAME mosavie ba felan tabe , yani ag NAME return dade shod tabeye **name_func** seda mizne . yani injori ma omdim tabeye dashboard_func ro vbasl krdim b tabetye name_func vasl krdim.
+
+hala mirim tooye tabeye name_func
+
+
+```python
+async def name_func(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    #mikham bedamesh b ye tabe dgg
+    name = update.message.text
+    await update.message.reply_text(f'سلام {name} خوش آمدید')
+    await update.message.reply_text('سنتون چقدره')
+    return 'AGE'
+
+```
+khobn hala update.message.text hamoon chizi hast k yani , bad az inke minevsie **esmeton ro begid** khob taraf harchi benvise , choon oon tabe vasle b in tabe. javabe taraf ersal mishe b in tabeye **name_func**
+
+![name](/telegram_tutorial/tutorial_pictures/name.jpg)
+
+kho inja update.message.text mishe hamon 'ali' va hamontor k mibinid await mizane yani
+sari in soal ro miporse va 'AGE' ro barmigrdone va ag too **states** bebinid age ro vasl krde b tabeye badi
+
+
+```python
+'AGE':[MessageHandler(filters.TEXT,age_func)],
+```
+
+![sen](/telegram_tutorial/tutorial_pictures/age.jpg)
+
+khob hala seni k inaj dadim mire tooye update.message.text . khob berim tabeye age_func ro benvisim
+
+```python
+async def age_func(update: Update, context: ContextTypes.DEFAULT_TYPE):
+
+    age = update.message.text
+
+    if age.isdigit():
+        age = int(age)
+        if age >= 8:
+            await update.message.reply_text('شما میتونید از ربات استفاده کنید')
+
+            keyword = [
+                [InlineKeyboardButton("پرمیوم", callback_data="permium")],
+                [InlineKeyboardButton("ساده ", callback_data="basic")],
+            ]
+            reply_markup = InlineKeyboardMarkup(keyword)
+
+            await update.message.reply_text('لطفا یک گزینه انتخاب کن',reply_markup =reply_markup )
+            return 'KEY'
+
+        else:
+            await update.message.reply_text('شما نمیتونید از ربات استفاده کنید')
+            return ConversationHandler.END
+    else:
+        await update.message.reply_text('سنتون رو به عدد وارد کنید')
+        return 'AGE'
+
+```
+yek tabeye pichide skahtim k age taraf age esh baalye 8 bashe k miad va barash keyword neshonmide , age paeen tar bashe mige shoma nemitonid az robot estefade konid va rasman az conversation kharej mishe **conversationhandler.END** yani baraye in masir dobare bayad bezane **/dashboard** ag ham kolan adad vared nakone , minevise seneton ro b adad vared konid va reutnr mikone **age** in AGE hamonie k b hamin tabe seda mizane, yani dobare in tabe montazere sene tarafe
+
+hala ag sene trf balaye 8 bashe , hamontor k gofte shod dota gozine permium basic sakhte mishe va baraye taraf namayehs dade mishe. taraf ag rooye har gozine ee click kone, in tabe return mikone **KEY**
+
+```python
+'KEY':[CallbackQueryHandler(key_func)]
+```
+tabeye key_func fght motnazer vastade k behesh gozine befrestid, pas =in tabaro haminjori minevisim 
+
+
+```python
+async def key_func(update: Update, context: ContextTypes.DEFAULT_TYPE):
+
+    #gozine ee k entekhab shdoe?
+
+    query = update.callback_query
+    query.answer()
+
+    if query.data=='permium':
+        await query.edit_message_text(text='شما پرمیوم انتخاب کردید')
+        return ConversationHandler.END
+    elif query.data=='basic':
+        await query.edit_message_text(text='شما ساده انتخاب کردید')
+        return ConversationHandler.END
+
+```
+besadegie tamam.
+
+
+hala kolesho ma dakhele file ![telegram_test6.py](/telegram_tutorial/telegram_test6.py) darim k mitonid ba dastore zir runesh konid
+
+```bsh
+python telegram_test6.py
+```
 
 
 
@@ -466,4 +605,91 @@ wait --> await
 ----
 ----
 ----
-#Appendix B : Advanced Topics
+#Appendix B : TOKENS
+Kolan yadetoon bashe k tooye code haye khdoetoon **password** , **token** va baghie chiz haye khososi ro mostaghim nazarid.
+pas chikar konim?
+kafie yek file i besazid bename .env daghighan hamoonjae k file e pythoneton hast
+chijori?
+
+
+injkori
+
+```bsh
+touch .env
+```
+
+in yek file e .env misaze va khob mitonid bazesh konim
+albate havaseton bashe in file yek file e hidden hast va shoam nmitonid bebinidesh
+```bsh
+vim .env
+```
+
+rooye **i** miznid ta insertt baz she va bertoonid benevis masanal
+```bsh
+TOKEN = 'DSDSJKSHAKHSDKJDAHJKDHSA'
+PASSWORD = '12345678'
+```
+
+harchi ramzo token o api o .. darid ro inaj berizid
+
+hala bargrdid toye file e pythoneton
+ghabl az in yadeton bashe hamchin ketabkhon ee bayad dashte bashid
+
+```bsh
+pip install python-dotenv
+```
+
+hala kafie oonjae k TOEKN bood biaid benevisid
+```python
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+TOKEN = os.getenv('TOKEN')
+
+```
+tabeye load_dotenv() k az ketabkhone dotnev hast, ejaze mide k dotenv biad bala
+ba **os** vasl mishid b .env va khob 'token' yani b token vasl shod meghdaresho beriz tooye ye
+zarf bename TOKEN. va injori kheyli safe hastid
+
+
+**more advanced
+haavseton bashe vaghty github mikhayd bznid
+behich vaj git add .env nazadid yani hichvaght ino nazanid
+```bsh
+git add .env
+```
+
+yani ag inkar konid in file .env k havie passwordo token hatoon hast mire github
+
+hata bartaye khial rahatie bishtr mitonid tooye foldere madare projedtetoon yek file besazid bename .gitignore 
+in file rajebesh tozih dade mishe ama b sorate kholase , yechize k har no formati bzarid inja , dg ersal nmishe b samte github
+
+```bsh
+touch .gitignore
+```
+
+```bsh
+vim .gitignore
+```
+
+rooye **i** bznid
+bad bznid
+```bsh
+.env
+*.env
+```
+
+bad dg save konid khial rahat
+
+----
+----
+----
+#Appendix C : Advanced Topics
+
+
+
+----
+----
+----
+#Appendix D : Summary
