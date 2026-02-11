@@ -258,7 +258,77 @@ va mibinid k ag command /help ro bznid hamonchizi k tarif krdid ersal msihe yani
 
 ---
 ## 2-Message Handler
-khob ta alan fahmdiim kasi
+khob ta alan fahmdiim kasi ag az /command estefade krd chijori ba add_handler(CommandHandler) miaym va
+yek fucntion msiazim va ba update.message.reply_text behesh javab midim . khob ag bkhaym yeki message
+bede chijori ono handle konim?
+
+yek ghanone talaee
+- kasi command dad --> command handler estefade mikonim
+- kasi message dad --> message handler estefade mikonim
+
+pas hala bayad berim message handler besazim
+mesle hamishe
+**yek tabe biroon misazim badesh add_handler mikonim b application**
+pas biaid begim ag kasi message dad masalan biaym fght behesh javab bdim haminghd sade
+
+shekle tabe hamonjorie daghighan
+```python
+
+async def text_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):  
+    await update.message.reply_text('مسیج دریافت شد')
+
+```
+
+hala mirim too main va inja addhanlder mikonim bejaye **commandhandler** messsage handler mikonim
+
+```python
+from telegram.ext import MessageHandler
+from telegram.ext import filters
+
+application.add_handler(MessageHandler(filters.TEXT,text_handler))
+
+```
+in yani ag kasi message dad, tabeye text_hadnler shoro bekar mikone k in tabe fght dar javab mige message daryaft shdo, ama ma ag bkhaym yeki yechi befrese ma fght y matne sade besh bedim k niazi b message ndrim , hamoon raveshe ghabli kafi bod, yani miomdim az **command** estefade mikardim ke. pas ma message handler misazim k messag e taraf ro begirim va bahsh kar konim
+message e taraf koja mire? tooye yechizi bename ** update.message.text**
+
+khob fek kon yek tabe misazim k ag taraf message dad salam yechi bgim khobi goft yechi javab bdim
+
+
+```python
+async def text_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    zarf= update.message.text
+    if zarf =='salam':
+        #print('salam to chetori)
+        await update.message.reply_text('سلام خوبی؟')
+
+    elif zarf =='khoobi':
+        await update.message.reply_text('ممنون تو خوبی؟')
+
+    else:
+        await update.message.reply_text('من نمی فهمم چی می گی')
+
+
+```
+
+ba estefade az **update.message.text** miaym va harfe user ro mirizm too zarf , bad miaym ba if elif else migim ag felan bod felan javab bde , felan bod felano javab bde. javab dadna ham k mesle ghabel bayad az **update.message.reply_text** estefade konim.
+
+
+khob hamin ro ma omdim piade sazi kridm dar ![telegram_test3.py](/telegram_tutorial/telegram_test3.py)
+
+hala ag runesh konim
+
+```bsh
+python telegram_test3.py
+```
+mibinim k
+
+![messsage](/telegram_tutorial/tutorial_pictures/message.jpg)
+
+
+
+---
+## 2.5-Inlinekeyboards
+
 
 
 
