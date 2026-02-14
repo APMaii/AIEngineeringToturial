@@ -28,6 +28,18 @@ This repository contains lecture materials and implementations for a professiona
 | **03** | CLI & Shell | Bash, navigation, file management, text editors (vim/nano), networking tools | [AI_CLI.md](AI_CLI.md) |
 | **04** | Git & Version Control | Local versioning, staging, commits, GitHub, project supervision | [AI_GIT.md](AI_GIT.md) |
 | **05** | Telegram Bots | Bot setup, handlers (command, message, callback), inline keyboards, conversation flow | [telegram_tutorial/](telegram_tutorial/README.md) |
+| **06** | NumPy | Arrays, indexing, slicing, broadcasting, linear algebra, numerical computation | [AI_NUMPY.py](AI_NUMPY.py) |
+
+---
+
+## Reviews
+
+| Review | Topic | File |
+|--------|-------|------|
+| **R01** | Python Review | [AI_Python_Review.py](AI_Python_Review.py) |
+| **R02** | 24 bahman | [Reviews/01_24bahman.py](Reviews/01_24bahman.py) |
+
+
 
 ---
 
@@ -43,10 +55,17 @@ AIEngineeringToturial/
 ├── AI_CLI.md                 # 03: Command Line Interface & Shell
 ├── AI_GIT.md                 # 04: Git, GitHub, version control
 │
-└── telegram_tutorial/        # 05: Telegram bots (python-telegram-bot)
-    ├── README.md
-    ├── telegram_server.py
-    └── telegram_test1.py … telegram_test7.py
+├── telegram_tutorial/        # 05: Telegram bots (python-telegram-bot)
+│   ├── README.md
+│   ├── telegram_server.py
+│   └── telegram_test1.py … telegram_test7.py
+│
+├── AI_LINUX.md               # Linux & DevOps
+├── AI_NUMPY.py               # 06: NumPy
+│
+└── Reviews/                  # Review / summary files
+    ├── 01_24bahman.py
+
 ```
 
 ---
