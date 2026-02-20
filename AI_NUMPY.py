@@ -546,6 +546,34 @@ a --> object hast
 a--> .attributes  .methods()
 
 
+
+
+
+ma kolan 2 no tabe darim
+
+yeki tabe ee k besoorate joda dar numpy sakhte va defined shode
+
+baraye estefade
+
+import numpy as np
+np.function() estefade konid
+too delesh numpy array bzarid
+
+
+
+methods --> too dele nd.array hastan
+a,b,c , zarf = np.array(.......)
+
+zarf.function() #taghiro emal mikone
+
+
+
+2 halat
+overlap -->tabe ha ham esman. 
+np.add(a,b)
+
+a.add(b)
+
 '''
 
 #yad gereftim nd array chie
@@ -556,13 +584,14 @@ a--> .attributes  .methods()
 #besazi
 #-----------------------
 
-
+#tavabe biroooni
 #-------------------------
 #-------ASSIGNMENTS------
 #-------------------------
 import numpy as np
 
 zarf = np.array([10,20,30,40],dtype='float32')
+
 
 print(zarf)
 #[10. 20. 30. 40.]
@@ -1180,19 +1209,50 @@ a = np.arange(0,10).reshape(2,5).reshape(10)
 #-------------------------------------------------------
 #-------------------MAGIC FUNCTIONS-------------------
 #-------------------------------------------------------
+#ina tavabe mostaghele numpuy nistand mesle
+#np.arrange() np.zeros() np.random.uniform()
+#ina method haye yek ndarray (class) hastan k bayad
+#rooye oon numpy array dot bzni --> b.()
 #-----reshaping
+import numpy as np
 #.reshape()
 grid = np.arange(1, 10).reshape((3, 3))
+
+print(grid)
+'''
+[[1 2 3]
+ [4 5 6]
+ [7 8 9]]
+'''
 
 
 #.astype()
 M = np.array([10,20,30,40])
- 
 M.dtype #Out[141]: dtype('int64')
 
 M2 = M.astype(float)
 print(M2)
 #[10. 20. 30. 40.]
+
+M2.dtype #dtype('float64')
+
+
+print(M) #[10 20 30 40]
+M.dtype #dtype('int64')
+
+'''
+a = np.array([1,2,3,4])
+a.reshape((2,2))
+
+emal nmishe
+hatman niaz b yek zarf drid
+ch baraye tabae khareji va mostaghel
+np.arange() np.zero()
+
+method ha
+a.astpe()  a.reshap()
+'''
+
 
 M3 = M.astype(bool)
 print(M3)
@@ -1222,14 +1282,38 @@ b.shape # (10,)
 
 
 #---copy and view
-arr = np.arange(0,10)
-
-arr2=arr.view()
-arr2=arr.copy()
+import numpy as np
+arr1 = np.arange(0,10)
 
 
-print(arr)
+arr2 = arr1.copy()
+
+
+arr3 = arr1.view()
+
+
+
+arr2[5]=1000
+print(arr2)
+#[   0    1    2    3    4 1000    6    7    8    9]
+
+print(arr1)
 #[0 1 2 3 4 5 6 7 8 9]
+
+
+
+
+#----
+arr3[5]=1000
+print(arr3)
+#[   0    1    2    3    4 1000    6    7    8    9]
+
+print(arr1)
+#[   0    1    2    3    4 1000    6    7    8    9]
+
+
+
+
 
 
 #---fancy indeexing
@@ -1238,7 +1322,7 @@ row_index = [1,2,3]
 
 #index 1 , 2, 3
 arr[row_index] #array([22, 33, 44])
-
+#arrr[ [1,2,3]]
 
 row_mask = np.array([True,True,False,False,False,False,False,False, False])
 
@@ -1252,6 +1336,15 @@ arr[row_mask]
 #-----------
 #dfone done elementet hesab krde
 x = np.array([1, 2, 3, 4, 5])
+#man agh az comparisonal operators estefade konm
+#nabayad montazwere yedoone true false basham
+#x = [1,2,3] 
+#x>10 --> yanichi?
+
+#baklke manzoram ine har elemnt dar x aya bzoorgtr az 10 ?#
+#pas montazere true false bishatri hasta,m
+
+
 x < 3 # less than
 #Out[5]: array([ True, True, False, False, False], dtype=bool)
 x > 3 # greater than
@@ -1273,22 +1366,31 @@ x == 3 # equal
 #azin feature mitoni estefade koni baraye filter krdn
 
 x = np.arange(0,10)
+print(x)
+#[0 1 2 3 4 5 6 7 8 9]
+
 
 row_mask = x>5
-
 print(row_mask)
 #[False False False False False False  True  True  True  True]
 
-x[row_mask ] # array([6, 7, 8, 9])
+
+x[row_mask ]  # array([6, 7, 8, 9])
+#fghtonae k true hastan ro mide
+#francy indexing
+#ino mitoni brizi too zrf
 
 
 
 
-#------
 
 x[x>5] #array([6, 7, 8, 9])
 
 x[x==4] #array([4])
+
+#x[x>4 or x>=3]
+#x[x>4 and x>=3]
+
 
 
 
@@ -1301,17 +1403,33 @@ print(new) #(array([2]),) -->indexe 2
 a[2] #12
 
 
-new=np.where(a==5)
 new=np.where(a>30)
+
+
+
+#tamame jahae k in shart barat True mishe ro bht indexsho pas mide
+
+print(new)
+#(array([21, 22, 23, 24, 25, 26, 27, 28, 29]),)
+
+
+len(new[0]) # 9
+
+
+
+
+
+
 
 
 
 #----counting
 x = np.arange(0,10)
+#where + len
 np.count_nonzero(x < 6) #6
 np.sum(x < 6) #6
 
-
+#chanat element in sharayet barashon mojhagaheghe
 
 
 #------- conditions
@@ -1325,11 +1443,24 @@ M = np.arange(5,10)
 print(M)
 #[5 6 7 8 9]
 
+M>8
+#array([False, False, False, False,  True])
 
+
+
+#.any() .all() y true mide ya false
+#rooye ye chizi k koli [tru true false false]
+
+#any --> hadeaghal yeki az in ha
+#ag yedone ham true bashe beynesh 
+#agar hata yeki az element haye dakhele array M ,az 8 bozorgtre
+#true pas 
 (M>8).any() #9 -->>8 --> True
 #True
 
 
+
+#hameye element haye M az 8 bozorg tr bashand
 (M>8).all() #False
 
 
@@ -1343,31 +1474,95 @@ if (M>5).all():
     pass
 
 
-#-------------------------------------------------------
-#-------------JOINING ANS SPLITTING---------------------
-#-------------------------------------------------------
-
-
-
-#-------------------------------------------------------
-#-------------Iterating over array elements------------
-#-------------------------------------------------------
-
 
 
 
 #---Array arithemic
+#jabri anjam midim 
+#baraye har element in karo konm
+#for ......
+#tavabe ee  + - 
+#rooye element element array kar anajm bdi
 
 x = np.arange(4)
 print("x =", x)
+#x = [0 1 2 3]
+
+new = x + 5
+print(new)
+#[5 6 7 8]
+
+
 print("x + 5 =", x + 5)
 print("x - 5 =", x - 5)
 print("x * 2 =", x * 2)
 print("x / 2 =", x / 2)
+#x / 2 = [0.  0.5 1.  1.5]
+
+
 print("x // 2 =", x // 2) # floor division
+#x // 2 = [0 0 1 1]
+
 print("-x = ", -x)
+#-x =  [ 0 -1 -2 -3]
+
+print("-x =", -1 * x)
+#-x = [ 0 -1 -2 -3]
+
+
 print("x ** 2 = ", x ** 2)
+#x ** 2 =  [0 1 4 9]
+
+
 print("x % 2 = ", x % 2)
+#x % 2 =  [0 1 0 1]
+
+
+
+x = np.array([4,6,8,10,12])
+
+#aya hamash zooj hast?
+
+x%2 #--> numpy array baghi mandeye harkodom
+#[0 0 0 0 0 ]
+
+
+x%2==0 #--> True Fasle
+#array([ True,  True,  True,  True,  True])
+
+(x%2==0 ).any() # True
+(x%2==0 ).all() # True
+
+
+
+
+x = np.array([4,6,8,7,12])
+
+(x%2==0).any() #True
+(x%2==0).all() #False
+
+
+print(x%2==0)
+#[ True  True  True False  True]
+
+
+
+
+
+
+
+
+
+
+
+
+arr1=np.array([10,20,30])
+arr2= np.array([20,30,40])
+arr3= np.add(arr1,arr2)
+
+print(arr3) #[30 50 70]
+
+#np.add() ---> shoam mitoni
 
 np.add() #+
 np.substract() #-
@@ -1383,24 +1578,917 @@ np.abs()
 
 
 
+#------Comparison
+arr1=np.array([10,20,30])
+
+arr1>3 # array([ True,  True,  True])
+arr1>=3 
+arr1<3 
+arr1<=3 
+arr1==3
+arr1!=3
 
 
-#----#---Trigonometric functions
+
+#-----
+arr1=np.array([10,20,30])
+arr2=np.array([10,20,40])
+
+np.equal(arr1,arr2)  # array([ True,  True, False])
+
+
+arr1=np.array([10,20,30])
+arr2=np.array([100,200,1])
+
+
+#aya arr 1 az arr2 kochiktr hast?
+np.less(arr1,arr2) #array([ True,  True, False])
+
+
+
+#----don e done moghayese konam beytne dota rray
+np.equal() #==
+np.not_equal() #!=
+np.less() #<
+np.less_equal() #<=
+np.greater() #>
+np.greater_equal() #>=
+
+
+
+#array -->10000 element 
+#hadaaf --> ahmash bayad sedghkone, hadeaghal yekish
+arr1=np.array([10,20,30])
+arr2=np.array([100,200,1])
+
+np.less(arr1,arr2) #np.array az tru false mide
+
+np.less(arr1,arr2).any() #True
+
+
+#aya ahme ye arr1 az arr2 hamashoon kcohiktrn>
+
+np.less(arr1,arr2).all() #False
+
+
+
+ 
+
+
+#---Trigonometric functions
 theta = np.linspace(0, np.pi, 3)
 
+print(theta)
+#[0.         1.57079633 3.14159265]
+
+
+
 print("theta = ", theta)
+#theta =  [0.         1.57079633 3.14159265]
+
+#sinus done done elemnt haye yek array ro bgirm
+
 print("sin(theta) = ", np.sin(theta))
 print("cos(theta) = ", np.cos(theta))
 print("tan(theta) = ", np.tan(theta))
 
+#vorodi ya list bedi ya np array
+#tavabe nevshte shdoie 
+#Inpu --> List, numpy arrray ,..
+#Khoroji --> Numpy arrray 
+#az tabey numpy estefade mikoni
+
+x = [-1, 0, 1]
+print("x = ", x)
+print("arcsin(x) = ", np.arcsin(x))
+print("arccos(x) = ", np.arccos(x))
+print("arctan(x) = ", np.arctan(x))
 
 
-##-----statistics--------
-big_array = np.arange(0,10)
-np.min(big_array)
-np.max(big_array)
 
-#sum .max, min, median  ,....
+
+#Exponents and logarithms
+x = [1, 2, 3]
+print("x =", x)
+#e**
+print("e^x =", np.exp(x))
+print("2^x =", np.exp2(x))
+print("3^x =", np.power(3, x))
+
+
+#nokteye asli -->in tavabe --> baraton y nd arrauy jadid misaz
+#toosh bayad bzarid x , variable
+#done done anjam mide baraye har element
+
+#array --> yek chiz nbain
+#ykchizi az chiz ha (elemnt ha) bebinesh
+
+
+x = [1, 2, 4, 10]
+print("x =", x)
+print("ln(x) =", np.log(x))
+print("log2(x) =", np.log2(x))
+print("log10(x) =", np.log10(x))
+
+
+
+
+
+#----
+x = [1.3 , 2.8]
+#b paeen gerd mikone
+np.floor(x) #array([1., 2.])
+
+
+np.ceil(x)
+#array([2., 3.])
+
+
+
+#specialized functions
+'''
+from scipy import special
+x = [1, 5, 10]
+print("gamma(x) =", special.gamma(x))
+print("ln|gamma(x)| =", special.gammaln(x))
+print("beta(x, 2) =", special.beta(x, 2))
+x = np.array([0, 0.3, 0.7, 1.0])
+print("erf(x) =", special.erf(x))
+print("erfc(x) =", special.erfc(x))
+print("erfinv(x) =", special.erfinv(x))
+'''
+
+
+
+
+
+
+
+
+
+
+
+#-----------------------
+
+x = np.arange(1,6)
+print(x) #[1 2 3 4 5]
+
+
+np.add.reduce(x) #15
+
+
+np.multiply.reduce(x) #120
+
+
+#beman done done neshonbde
+#1*2 -->2   2*3 --> 6   6*4 -->24  24*5 ->120
+np.multiply.accumulate(x)
+#Out[124]: array([  1,   2,   6,  24, 120])
+
+
+
+
+#-----STATISTICS
+#random ha sohbat
+
+#Np.random.random() beyne 0 ta 1 float --> shape
+
+#np.random.uniform(a,b,shape) #az a ta b --> shape ro
+#np.random.normal(mean,variance , shape)
+
+#np.random.randint(a,b) #integr mida
+
+
+
+L = np.random.random(100)
+print(L)
+'''
+[0.80222959 0.07894942 0.42059851 0.14907542 0.92798877 0.4627912
+ 0.15475565 0.6618435  0.58784648 0.79115779 0.79679832 0.82835395
+ 0.27187584 0.94472923 0.82823702 0.05262717 0.25835695 0.23485167
+ 0.28794714 0.64314675 0.28543144 0.98198517 0.95435668 0.39978538
+ 0.64350983 0.9038329  0.87394201 0.05311214 0.44752308 0.5632728
+ 0.87768612 0.56330696 0.22700284 0.9595241  0.39681074 0.26616065
+ 0.84900794 0.09536302 0.25160383 0.35014525 0.07026135 0.53923212
+ 0.22258151 0.83657879 0.74637742 0.055037   0.42623499 0.18821141
+ 0.61706252 0.2260063  0.36686731 0.71682258 0.49024109 0.72943461
+ 0.39890948 0.99632125 0.23251807 0.40410719 0.97754344 0.15903533
+ 0.04841419 0.20072715 0.84943721 0.75394774 0.32030464 0.31632382
+ 0.51085874 0.86815641 0.99309322 0.63717269 0.99114754 0.64017088
+ 0.74736605 0.45354721 0.36277059 0.23193163 0.53842361 0.45841963
+ 0.14566935 0.11710003 0.37977044 0.510686   0.64120124 0.25801337
+ 0.09051514 0.87961482 0.41199003 0.25997485 0.25409784 0.64055371
+ 0.33407954 0.24135215 0.32952643 0.95307759 0.03870667 0.40867981
+ 0.42284081 0.71306972 0.23503463 0.04614364]
+
+
+'''
+
+
+#kole jamesho bgiri
+#hamashon ro
+
+#np.sum() np.min()  np.max()  tohosn array
+np.sum(L) #48.76081779543432
+np.min(L) #0.038706672983148116
+np.max(L) #0.9963212462513072
+
+
+
+L.sum() #48.76081779543432
+L.min() #0.038706672983148116
+L.max() #0.9963212462513072
+
+
+
+
+#too in datana -->statiscto --> yek bodi nist
+
+L2 = np.random.random((2,3))
+
+print(L2)
+'''
+            soton0      soton1       soton2
+radif0  [[0.43123905   0.11408909   0.32224427]
+radif1 [0.71701833    0.80749121    0.53378818]]
+
+'''
+
+L2.sum() #2.925870129555811
+
+L2.sum(axis=0) #array([1.14825738, 0.9215803 , 0.85603246])
+
+L2.sum(axis=1) #array([0.86757241, 2.05829772])
+
+
+
+
+L2.min() #0.11408908790960137 beyne 6 
+
+
+L2.min(axis=0)
+#array([0.43123905, 0.11408909, 0.32224427])
+
+L2.min(axis=1) #array([0.11408909, 0.53378818])
+
+
+
+
+#statistic --> np.()    array.
+#inha bayad bdonid kolie , baraye 2d
+#ba axis --> riz tar besjhid tooye rows and columns
+#----- SUm ,....
+
+#tavabe dg
+np.var() #sum of elements
+np.prod() #product of elemnts
+np.std()  # compute standad deviation
+np.var()  #variance
+np.min()
+np.max()
+np.argmin() #find the index of min
+np.argmax() #find the index o max
+np.mean()
+np.median()
+np.percentile()
+np.any()
+np.all()
+
+
+a=np.arange(0,10)
+
+np.mean(a) # 4.5
+a.mean() #4.5
+
+
+
+#------
+#np.sort()
+#np.sort(x,axis=0)
+
+
+
+
+
+#-------------------------------------------------------
+#-------------Iterating over array elements------------
+#-------------------------------------------------------
+
+v = np.array([1,2,3,4])
+
+for element in v:
+    print(element)
+
+'''
+1
+2
+3
+4
+
+'''
+
+
+#------2D
+
+M = np.array([[1,2],[3,4]])
+print(M)
+'''
+radif 0 --> [[1 2]
+radif1 --> [3 4]]
+
+'''
+
+#b adad 3 ??
+#kodom radif --: 1
+#toye radif 1 --> sotone 0 
+
+#1 , 2 , 3 ,4
+
+for chiz in M:
+    print(chiz)
+
+'''
+[1 2]
+[3 4]
+
+'''
+
+
+for x in M:  
+    print('row:',x)
+
+'''
+row: [1 2]
+row: [3 4]
+
+'''
+
+#-----
+
+for row in M :
+    print('row:',row)
+'''
+row: [1 2]
+row: [3 4]
+'''
+
+
+
+
+for row in M :
+    #hala row yek np.array 1D
+    for element in row:
+        print(element)
+
+'''
+1
+2
+3
+4
+
+'''
+
+
+
+
+
+C3 = np.array([  [[1,2,3],[4,5,6]] , 
+               [[7,8,9],[10,11,12] ] ,
+               [[13,14,15],[16,17,18]]  ])
+
+C3.ndim #3
+C3.shape #(3,2,3)
+
+
+for chiz in C3:
+    print('=========')
+    print('khode chiz:',chiz)
+    print('type e chiz:',type(chiz))
+    print('dimension e chiz',chiz.ndim)
+
+
+'''
+=========
+khode chiz: [[1 2 3]
+ [4 5 6]]
+type e chiz: <class 'numpy.ndarray'>
+dimension e chiz 2
+
+'''
+
+for matrix in C3:
+    for row in matrix:
+        print(row)
+        print('--')
+'''
+[1 2 3]
+--
+[4 5 6]
+--
+[7 8 9]
+--
+[10 11 12]
+--
+[13 14 15]
+--
+[16 17 18]
+--
+
+'''
+for matrix in C3:
+    for row in matrix:
+        for element in row:
+            print(element)
+        
+        
+'''
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+
+'''
+
+
+#radife felan , sotone felan
+M[2,1]
+
+
+#kodom table, radif , kodom soton
+C3[1,2,2]
+
+
+
+#d4[kodom 3d , kodom table, kodom radif, kodom soton]
+
+
+#for 3d in 4d:
+    #for matrix in 2d:
+        #for row in matrix:
+            #for element in row:
+                #print(element)
+                
+    
+    
+    
+Matrix = np.random.uniform(10,20,(4,5))
+
+print(Matrix)
+
+'''
+[[10.7101504  10.9931878  19.36326489 12.57765563 10.40385527]
+ [11.30634037 18.09112736 18.75921809 19.03509636 19.2634681 ]
+ [19.5841465  19.01956689 18.80846765 13.94746962 10.35346747]
+ [17.65658903 12.38961262 19.73570548 11.68273099 19.60990709]]
+
+
+'''
+
+#kodomeshon balaye 15 hastan ?? bekeshameshon biron
+#avalin fore --> radifo 
+#dovomiin for ->elemtn mide
+mylist=[]
+for row in Matrix:
+    for element in row:
+        if element>15:
+            mylist.append(element)
+            
+
+
+print(mylist)
+'''
+[19.363264891938712, 18.091127363963125, 18.759218093195543, 19.035096363034956, 19.263468102884477, 19.584146501415404, 19.019566889061757, 18.808467650353343, 17.656589025143113, 19.73570547891891, 19.609907091633232]
+
+'''
+
+mylist=[]
+for row in Matrix:
+    for element in row:
+        if element>19:
+            mylist.append(element)
+            
+
+if len(mylist)!=0:
+    print('failed')
+            
+#failed
+
+
+
+
+
+Matrix>19
+'''
+array([[False, False,  True, False, False],
+       [False, False, False,  True,  True],
+       [ True,  True, False, False, False],
+       [False, False,  True, False,  True]])
+'''
+
+
+if (Matrix>19).any():
+    print('failed')
+
+#failed
+
+
+
+
+
+
+
+
+
+
+#ITERATION--> chekhabare
+#-->Python --> konde , code bznid
+
+#On tavabe ee k numpy behet --> C++ , tonde, Code
+
+Matrix[Matrix>15]
+'''
+array([19.36326489, 18.09112736, 18.75921809, 19.03509636, 19.2634681 ,
+       19.5841465 , 19.01956689, 18.80846765, 17.65658903, 19.73570548,
+       19.60990709])
+
+'''
+
+
+
+#-------------------------------------------------------
+#-------------JOINING ANS SPLITTING---------------------
+#-------------------------------------------------------
+
+#hol nashid azizan
+#rok --> bad inhame sal --> In tike sakhte
+#etsefade ziad shayad nashe
+
+#Nabayad hame ye tavabe ro ghefz koni
+#ghavanino hefz kondi
+
+
+a=np.array([10,20,30,40])
+b= np.array([100,200,300,400])
+
+print(a) #[10 20 30 40]
+print(b) #[100 200 300 400]
+
+
+'''
+[10 20 30 40]
+[100 200 300 400]
+
+
+
+
+[10  100]
+[20  200]
+[30  300]
+[40  400]
+
+'''
+#dota argumente jodan
+#np.concatenate(a,b) -->eshtebah
+
+c= np.concatenate((a,b))
+
+print(c)
+#[ 10  20  30  40 100 200 300 400]
+
+c= np.concatenate((a,b),axis=0)
+print(c)
+#[ 10  20  30  40 100 200 300 400]
+
+#c=np.concatenate((a,b),axis=1)
+
+
+#reshape()
+
+c.reshape(2,4)
+'''
+array([[ 10,  20,  30,  40],
+       [100, 200, 300, 400]])
+
+'''
+
+
+
+
+c.reshape(4,2)
+'''
+array([[ 10,  20],
+       [ 30,  40],
+       [100, 200],
+       [300, 400]])
+
+'''
+
+
+
+#-----------3D---------
+
+
+
+a=np.array([10,20,30,40]).reshape(2,2)
+b= np.array([100,200,300,400]).reshape(2,2)
+
+print(a)
+'''
+[[10 20]
+ [30 40]]
+
+'''
+
+print(b)
+
+'''
+[[100 200]
+ [300 400]]
+'''
+
+
+
+
+'''
+[[10 20]  [[100 200]
+ [30 40]]   [300 400]]
+
+
+
+
+[[10 20]
+ [30 40]]
+[[100 200]
+ [300 400]]
+
+'''
+
+c = np.concatenate((a,b))
+print(c)
+'''
+[[ 10  20]
+ [ 30  40]
+ [100 200]
+ [300 400]]
+
+
+dar toole *radif* ha inkaro anjam mide
+
+'''
+
+c = np.concatenate((a,b),axis=0)
+print(c)
+
+'''
+[[ 10  20]
+ [ 30  40]
+ [100 200]
+ [300 400]]
+'''
+
+
+
+c = np.concatenate((a,b),axis=1)
+print(c)
+'''
+[[ 10  20]
+ [ 30  40]
+ [100 200]
+ [300 400]]
+
+'''
+
+
+
+
+
+#-------------------------
+#vstack
+#vertical stack --> vertical --> amodi
+
+x = np.array([1, 2, 3])
+print(x)
+#[1 2 3]
+
+grid = np.array([[9, 8, 7], [6, 5, 4]])
+print(grid)
+'''
+[[9 8 7]
+ [6 5 4]]
+'''
+
+np.vstack([x, grid])
+'''
+array([[1, 2, 3],
+       [9, 8, 7],
+       [6, 5, 4]])
+
+'''
+
+
+
+
+#------
+
+np.hstack((x,grid)) #errror
+
+a=np.array([10,20,30,40]).reshape(2,2)
+b= np.array([100,200,300,400]).reshape(2,2)
+
+np.hstack((a,b))
+'''
+array([[ 10,  20, 100, 200],
+       [ 30,  40, 300, 400]])
+
+'''
+
+
+
+#d --> omgh 
+
+
+
+
+#-----
+
+x = [1, 2, 3, 99, 99, 3, 2, 1]
+
+a = np.split(x,(3,5))
+
+
+print(a)
+#[array([1, 2, 3]), array([99, 99]), array([3, 2, 1])]
+
+
+
+
+#-------repeat
+a= np.array([[1,2],[3,4]])
+
+np.repeat(a,3)
+
+#array([1, 1, 1, 2, 2, 2, 3, 3, 3, 4, 4, 4])
+
+
+
+
+#_----RESHAPE() estefade konid
+
+
+
+
+
+
+#--BLOCK [[optional]]
+
+a = np.array([[1,2],[3,4]])
+b = np.array([[5,6],[7,8]])
+
+print(a)
+'''
+[[1 2]
+ [3 4]]
+'''
+
+
+print(b)
+'''
+[[5 6]
+ [7 8]]
+
+'''
+'''
+
+[[1 2]
+ [3 4]]
+        [[5 6]
+         [7 8]]
+
+[[1 2]   0  0
+ [3 4]]  0   0
+  0  0  [[5 6]
+  0  0  [7 8]]
+
+
+
+'''
+
+result = np.block([
+    [a, np.zeros((2,2))],
+    [np.zeros((2,2)), b]
+])
+
+print(result)
+
+'''
+[[1. 2. 0. 0.]
+ [3. 4. 0. 0.]
+ [0. 0. 5. 6.]
+ [0. 0. 7. 8.]]
+
+'''
+
+
+
+#-----Nokteye akahr -->reshape yechizi dare --> -1
+
+import numpy as np
+
+a= np.arange(10,410,10)
+print(a)
+
+
+a.shape # (40,)
+
+
+
+
+#ag daghigh begam 4 radif , 10 sotone mikham
+#a.reshape(radif, soton)
+#a.reshape(4,10)
+
+
+#man mikham b 4 radif tabdileshkonm --> 
+
+#size = radif x soton
+
+#1----usage
+
+b=a.reshape(4,-1)
+
+b.shape #Out[218]: (4, 10)
+
+
+c= a.reshape(-1,4)
+c.shape #Out[220]: (10, 4)
+
+
+#2-usage
+
+#bebin kh az tavabe k mirim joltar
+#strciitan --> rooye shape e np arrayi k bdsoraste
+#vorodi dakheel yek tabe mikoni
+
+#sklearn --> tavabe dae --> np array migire
+#guire rooye chi?
+#rooye shape array --> error --> errore 
+
+
+a = np.array([1,2,3,4,5,6,7,8,9,10])
+a.shape #Out[222]: (10,)
+a.ndim #1
+
+
+#2 bodu --> 2 bodi?
+# 10 ta soton tabdil koni 1 radis
+
+#1,2,3,4,5,6,7,8,9,10
+#(1,10)
+
+
+
+#10 ta radi 1 soton
+'''
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+(10,1)
+'''
+
+
+#*****
+#1 bodio --> 2 bodi tabdil mikonan
+
+
+#1 done radif
+a.reshape(1,-1)
+
+
+#1 doone soton
+a.reshape(-1,1)
+
 
 
 
@@ -1413,14 +2501,70 @@ np.max(big_array)
 
 '''
 
+Linear_algebra.py --> Numpy, scipy , sympy ro tadris konim
+
+Mogahdame bar ML 
+
 Hooshe masnoee
-
 MATRIX()
-
-
 100 khat
 
 '''
+
+
+
+#==============
+#==============
+#==============
+
+'''
+Practical Notes
+'''
+
+
+
+'''
+
+radif mohem ahs --> aval radif --> ...
+
+np. external , inside method
+
+tavabe -> yek nparay -->moghaye yek adad
+tavabe --> dota np array moghayese koni
+
+
+tavabe , .. --> 1D , 2d (3d,....)
+1d -->y result
+a.min() y adad mide --> [10,20,30,40]
+
+2d --> y result  [radif, soton]
+min -->kole --> toohar sootn , har radifi --> axis
+
+
+
+
+
+Nokte --> Tamrin 
+
+kole numpy shoam mitoni?
+se barbaare inam bkhjni -> 5% numpy balad bashi
+
+
+90% e usage e numpy 
+
+
+
+
+tabeye concat -> besorate bydefaul -->dar rastaye **radif** ha maiayad michinad
+ama dar 1D -->asan masale radifo soton nis -> 1d --> poshte ham michaboaanrsh
+'''
+
+
+
+
+
+
+#--------------------------TAMRIN -----------------------------
 
 
 '''
@@ -1579,28 +2723,5 @@ git pull origin --> motmaen shi hamechio grfti
 
 
 
-
-
-
-
-
-
-
 '''
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
