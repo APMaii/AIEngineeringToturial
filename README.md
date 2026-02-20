@@ -29,7 +29,7 @@ This repository contains lecture materials and implementations for a professiona
 | **04** | Git & Version Control | Local versioning, staging, commits, GitHub, project supervision | [AI_GIT.md](AI_GIT.md) |
 | **05** | Telegram Bots | Bot setup, handlers (command, message, callback), inline keyboards, conversation flow | [telegram_tutorial/](telegram_tutorial/README.md) |
 | **06** | NumPy | Arrays, indexing, slicing, broadcasting, linear algebra, numerical computation | [AI_NUMPY.py](AI_NUMPY.py) |
-
+| **07** | Matplotlib | Visualization and graphics with matplotlib | [AI_Matplotlib.ipynb](AI_Matplotlib.ipynb) |
 ---
 
 ## Reviews
@@ -62,6 +62,7 @@ AIEngineeringToturial/
 │
 ├── AI_LINUX.md               # Linux & DevOps
 ├── AI_NUMPY.py               # 06: NumPy
+├── AI_Matplotlib.ipynb              # 07: Matplotlib
 │
 └── Reviews/                  # Review / summary files
     ├── 01_24bahman.py
