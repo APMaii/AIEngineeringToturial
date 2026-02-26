@@ -378,7 +378,7 @@ Containerization tool. Run isolated applications or services with all dependenci
 
 ## git
 **in AI_GIT.md file shoma mitonid git ro bebinid**
-
+khob baraye test mikhaym inja ro kari konim
 
 ## Poetry
 Python dependency and project management tool (like Conda but lighter for Python-only projects)
