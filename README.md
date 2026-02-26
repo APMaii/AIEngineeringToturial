@@ -38,7 +38,7 @@ This repository contains lecture materials and implementations for a professiona
 |--------|-------|------|
 | **R01** | Python Review | [AI_Python_Review.py](AI_Python_Review.py) |
 | **R02** | 24 bahman | [Reviews/01_24bahman.py](Reviews/01_24bahman.py) |
-
+| **R03** | 7 esfand | [Reviews/02_7Esfand_1404.md](Reviews/02_7Esfand_1404.md)|
 
 
 ---
@@ -66,6 +66,7 @@ AIEngineeringToturial/
 │
 └── Reviews/                  # Review / summary files
     ├── 01_24bahman.py
+    ├── 02_7Esfand_1404.md
 
 ```
 
