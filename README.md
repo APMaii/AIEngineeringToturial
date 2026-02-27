@@ -43,6 +43,17 @@ This repository contains lecture materials and implementations for a professiona
 | **R02** | 24 bahman | [Reviews/01_24bahman.py](Reviews/01_24bahman.py) |
 | **R03** | 7 esfand | [Reviews/02_7Esfand_1404.md](Reviews/02_7Esfand_1404.md)|
 
+## Quiz
+
+Tamame tamrin ha dakhele `Quiz/` folder hastand k bayad dar **repo** e k sakhtid ersal beshan
+
+| Quiz | Focus | Suggested Prerequisite | File |
+|------|-------|------------------------|------|
+| **Q1** | Advanced Python, class methods, and errors | Modules 01-02 | [Q1.md](Quiz/Q1.md) |
+| **Q2** | CLI and Git workflow practice | Modules 03-04 | [Q2.md](Quiz/Q2.md) |
+| **Q3** | NumPy exercises | Module 06 | [Q3.md](Quiz/Q3.md) |
+| **Q4** | Matplotlib exercises | Module 07 | [Q4.md](Quiz/Q4.md) |
+
 
 ---
 
@@ -62,6 +73,7 @@ AIEngineeringToturial/
 │   └── telegram_test1.py … telegram_test7.py
 │
 ├── AI_Tutorials/
+│   ├── README.md                  # Study guide and reading sequence
 │   ├── AI_Python_Review.py       # 01: Python fundamentals review
 │   ├── ADVANCED_Class_Object.py  # 02: Advanced classes and OOP
 │   ├── AI_CLI.md                 # 03: Command Line Interface & Shell
@@ -69,13 +81,20 @@ AIEngineeringToturial/
 │   ├── AI_NUMPY.py               # 06: NumPy
 │   ├── AI_Matplotlib.ipynb       # 07: Matplotlib
 │   ├── AI_LINUX.md               # Linux & DevOps
+│   ├── AI_Linear_Algebra.py
 │   ├── AI_Calculus.py
-│   ├── AI_Numerical.py
-│   └── AI_Linear_Algebra.py
+│   └── AI_Numerical.py
 │
-└── Reviews/                  # Review / summary files
-    ├── 01_24bahman.py
-    ├── 02_7Esfand_1404.md
+├── Reviews/                  # Review / summary files
+│   ├── 01_24bahman.py
+│   ├── 02_7Esfand_1404.md
+│
+└── Quiz/                     # Practice assignments
+    ├── README.md
+    ├── Q1.md
+    ├── Q2.md
+    ├── Q3.md
+    └── Q4.md
 
 ```
 
