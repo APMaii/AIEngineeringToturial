@@ -1,5 +1,3 @@
-
-
 # Command Line Interface (CLI)
 
 In The Name of GOD
