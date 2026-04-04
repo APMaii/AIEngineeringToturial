@@ -1,5 +1,6 @@
 # Linux Tutorial
 
+
 Khob inja mikhaym rajebe Linux harf bznim k asan chie?
 Linux yek Operating system(OS) has yani mese windows , mese macos ke modiriate mikone hardware(CPU, MEMORY, DISK) va software shomaro.
 ---
