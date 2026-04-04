@@ -7,7 +7,6 @@ Created on Fri Feb 27 09:20:24 2026
 
 Numerical calculation
 Mohasebate Adadi
-
 """
 
 #==============================
