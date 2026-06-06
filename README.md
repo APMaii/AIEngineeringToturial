@@ -33,6 +33,11 @@ This repository contains lecture materials and implementations for a professiona
 | **08** | Linear Algebra | Vectors, matrices, transformations, eigenvalues, and core algebra for AI | [AI_Linear_Algebra.py](AI_Tutorials/AI_Linear_Algebra.py) |
 | **09** | Calculus | Derivatives, gradients, optimization intuition, and calculus essentials for ML | [AI_Calculus.py](AI_Tutorials/AI_Calculus.py) |
 | **10** | Numerical Methods | Numerical stability, approximation, and computational techniques | [AI_Numerical.py](AI_Tutorials/AI_Numerical.py) |
+| **11** |  Pandas | Library for data analysis and work with data | [AI_Pandas.py](AI_Tutorials/AI_Pandas.py) |
+| **12** | Data Cleaning | Data Cleaning before Machine learning (With Pandas) | [AI_Pre_Processing.py](AI_Tutorials/AI_Pre_Processing.py) |
+
+
+
 ---
 
 ## Reviews
@@ -53,6 +58,7 @@ Tamame tamrin ha dakhele `Quiz/` folder hastand k bayad dar **repo** e k sakhtid
 | **Q2** | CLI and Git workflow practice | Modules 03-04 | [Q2.md](Quiz/Q2.md) |
 | **Q3** | NumPy exercises | Module 06 | [Q3.md](Quiz/Q3.md) |
 | **Q4** | Matplotlib exercises | Module 07 | [Q4.md](Quiz/Q4.md) |
+| **Q5** | Pandas exercises | Module 08 | [Q5.md](Quiz/Q5.md) |
 
 
 ---
@@ -84,6 +90,8 @@ AIEngineeringToturial/
 │   ├── AI_Linear_Algebra.py
 │   ├── AI_Calculus.py
 │   └── AI_Numerical.py
+│   └── AI_Pandas.py
+│   └── AI_Pre_Processing.py
 │
 ├── Reviews/                  # Review / summary files
 │   ├── 01_24bahman.py
@@ -95,6 +103,7 @@ AIEngineeringToturial/
     ├── Q2.md
     ├── Q3.md
     └── Q4.md
+    └── Q5.md
 
 ```
 
