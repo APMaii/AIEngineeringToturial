@@ -35,6 +35,7 @@ This repository contains lecture materials and implementations for a professiona
 | **10** | Numerical Methods | Numerical stability, approximation, and computational techniques | [AI_Numerical.py](AI_Tutorials/AI_Numerical.py) |
 | **11** |  Pandas | Library for data analysis and work with data | [AI_Pandas.py](AI_Tutorials/AI_Pandas.py) |
 | **12** | Data Cleaning | Data Cleaning before Machine learning (With Pandas) | [AI_Pre_Processing.py](AI_Tutorials/AI_Pre_Processing.py) |
+| **13** | Statistics | Statistics Overview required for Machine learning | [AI_Statistics.py](AI_Tutorials/AI_Statistics.py) |
 
 
 
@@ -47,6 +48,7 @@ This repository contains lecture materials and implementations for a professiona
 | **R01** | Python Review | [AI_Python_Review.py](AI_Tutorials/AI_Python_Review.py) |
 | **R02** | 24 bahman | [Reviews/01_24bahman.py](Reviews/01_24bahman.py) |
 | **R03** | 7 esfand | [Reviews/02_7Esfand_1404.md](Reviews/02_7Esfand_1404.md)|
+| **R04** | 29 Khordad | [Reviews/03_29khordad.py](Reviews/03_29khordad.py)|
 
 ## Quiz
 
@@ -87,15 +89,17 @@ AIEngineeringToturial/
 │   ├── AI_NUMPY.py               # 06: NumPy
 │   ├── AI_Matplotlib.ipynb       # 07: Matplotlib
 │   ├── AI_LINUX.md               # Linux & DevOps
-│   ├── AI_Linear_Algebra.py
+│   ├── AI_Linear_Algebra.py      #
 │   ├── AI_Calculus.py
 │   └── AI_Numerical.py
 │   └── AI_Pandas.py
 │   └── AI_Pre_Processing.py
+│   └── AI_Statistics.py
 │
 ├── Reviews/                  # Review / summary files
 │   ├── 01_24bahman.py
 │   ├── 02_7Esfand_1404.md
+│   └── 03_29khordad.py
 │
 └── Quiz/                     # Practice assignments
     ├── README.md
