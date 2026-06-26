@@ -32,6 +32,16 @@ Use this guide to read the files in the same sequence as the main `README.md`.
 9. [AI_Numerical.py](AI_Numerical.py)  
    Numerical methods: approximation, stability, and practical computation techniques.
 
+10. [AI_Pandas.py](AI_Statistics.py)
+   
+11. [AI_Pre_Processing.py](AI_Regression.ipynb)
+
+12.
+
+13. 
+
+
+
 ## Additional File
 
 - [AI_LINUX.md](AI_LINUX.md): Linux and DevOps basics for engineering workflows and production readiness.
