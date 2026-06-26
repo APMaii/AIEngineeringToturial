@@ -64,7 +64,7 @@ Tamame tamrin ha dakhele `Quiz/` folder hastand k bayad dar **repo** e k sakhtid
 | **Q3** | NumPy exercises | Module 06 | [Q3.md](Quiz/Q3.md) |
 | **Q4** | Matplotlib exercises | Module 07 | [Q4.md](Quiz/Q4.md) |
 | **Q5** | Pandas exercises | Module 08 | [Q5.md](Quiz/Q5.md) |
-
+| **Q6** | Linear Regression | Module 13 | [Q6.md](Quiz/Q6.md) |
 
 ---
 
@@ -94,10 +94,10 @@ AIEngineeringToturial/
 │   ├── AI_LINUX.md               # Linux & DevOps
 │   ├── AI_Linear_Algebra.py      #
 │   ├── AI_Calculus.py
-│   └── AI_Numerical.py
-│   └── AI_Pandas.py
-│   └── AI_Pre_Processing.py
-│   └── AI_Statistics.py
+│   ├── AI_Numerical.py
+│   ├── AI_Pandas.py
+│   ├── AI_Pre_Processing.py
+│   ├── AI_Statistics.py
 │   └── AI_Regression.ipynb
 │
 ├── Reviews/                  # Review / summary files
@@ -110,8 +110,15 @@ AIEngineeringToturial/
     ├── Q1.md
     ├── Q2.md
     ├── Q3.md
-    └── Q4.md
-    └── Q5.md
+    ├── Q4.md
+    ├── Q5.md
+    ├── Q6.md
+    └── quiz_data
+        ├── Material_Strength_Temperature.xlsx
+        ├── taxi_fare_dataset.xlsx
+        ├── delivery_time_dataset.csv
+        └── home_energy_consumption_dataset.xlsx
+
 
 ```
 
