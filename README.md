@@ -36,7 +36,8 @@ This repository contains lecture materials and implementations for a professiona
 | **11** |  Pandas | Library for data analysis and work with data | [AI_Pandas.py](AI_Tutorials/AI_Pandas.py) |
 | **12** | Data Cleaning | Data Cleaning before Machine learning (With Pandas) | [AI_Pre_Processing.py](AI_Tutorials/AI_Pre_Processing.py) |
 | **13** | Statistics | Statistics Overview required for Machine learning | [AI_Statistics.py](AI_Tutorials/AI_Statistics.py) |
-| **13** | Linear Regression | Introduction of Machine learning and linear regression| [AI_Regression.ipynb](AI_Tutorials/AI_Regression.ipynb) |
+| **14** | Linear Regression | Introduction of Machine learning and linear regression| [AI_Regression.ipynb](AI_Tutorials/AI_Regression.ipynb) |
+| **15** | Machine Learning Intro | Introduction of Machine learning | [AI_Ml_intro.ipynb](AI_Tutorials/AI_Ml_intro.ipynb) |
 
 
 
@@ -98,7 +99,8 @@ AIEngineeringToturial/
 │   ├── AI_Pandas.py
 │   ├── AI_Pre_Processing.py
 │   ├── AI_Statistics.py
-│   └── AI_Regression.ipynb
+│   ├── AI_Regression.ipynb
+│   └── AI_Ml_intro.ipynb
 │
 ├── Reviews/                  # Review / summary files
 │   ├── 01_24bahman.py
