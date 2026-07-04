@@ -34,11 +34,13 @@ Use this guide to read the files in the same sequence as the main `README.md`.
 
 10. [AI_Pandas.py](AI_Statistics.py)
    
-11. [AI_Pre_Processing.py](AI_Regression.ipynb)
+11. [AI_Pre_Processing.py](AI_Pre_Processing.py)
 
-12.
+12. [AI_Statistics.py](AI_Statistics.py)
 
-13. 
+13. [AI_Regression.ipynb](AI_Regression.ipynb)
+
+14. [AI_Ml_intro.ipynb](AI_Ml_intro.ipynb)
 
 
 
