@@ -4,7 +4,7 @@ In The Name of God
 
 Created on Fri Jun 12 08:58:21 2026
 
-@author: Ali Pilehvar Meibody
+@author: Ali Pilehvar Meibody 
 
 
 AI_Statistics.py
