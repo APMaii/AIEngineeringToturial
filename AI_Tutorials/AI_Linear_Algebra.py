@@ -1,7 +1,7 @@
 """
 Created on Fri Feb 27 07:52:53 2026
 
-@author: Ali Pilehvar Meibody
+@author: Ali Pilehvar Meibody 
 
 
 in jalase --> riaziate ziad dare
