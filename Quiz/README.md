@@ -16,4 +16,9 @@ dar marhaleye aval tamame codee ha bayad khodeton neveshte bashid va agar az **A
 | Q2 | [Q2.md](Q2.md) | tamrin rooye estefade az CLI va Git | `AI_CLI.md` va `AI_GIT.md` |
 | Q3 | [Q3.md](Q3.md) | tamrin haye marbut be NumPy | `AI_NUMPY.py` |
 | Q4 | [Q4.md](Q4.md) | tamrin haye marbut be Matplotlib | `AI_Matplotlib.ipynb` |
+| Q5 | [Q5.md](Q5.md) | tamrin haye marbut be Matplotlib | `AI_Matplotlib.ipynb` |
+| Q6 | [Q6.md](Q6.md) | tamrin haye marbut be Matplotlib | `AI_Matplotlib.ipynb` |
+| Q7 | [Q7.md](Q7.md) | tamrin haye marbut be Matplotlib | `AI_Matplotlib.ipynb` |
+| Q8 | [Q8.md](Q8.md) | tamrin haye marbut be Matplotlib | `AI_Matplotlib.ipynb` |
+
 
