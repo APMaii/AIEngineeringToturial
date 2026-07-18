@@ -42,6 +42,18 @@ Use this guide to read the files in the same sequence as the main `README.md`.
 
 14. [AI_Ml_intro.ipynb](AI_Ml_intro.ipynb)
 
+15. [ML_Models.ipynb](ML_Models.ipynb)
+
+16. [AI_ML_GridsearchCV.ipynb](AI_ML_GridsearchCV.ipynb)
+
+17. [AI_Feature_engineering.ipynb](AI_Feature_engineering.ipynb)
+
+18. [AI_ML_Pipeline_.ipynb](AI_ML_Pipeline_.ipynb)
+
+19. [AI_ML_Unsupervised.ipynb](AI_ML_Unsupervised.ipynb)
+
+
+
 
 
 ## Additional File
