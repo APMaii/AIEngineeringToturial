@@ -69,7 +69,10 @@ Tamame tamrin ha dakhele `Quiz/` folder hastand k bayad dar **repo** e k sakhtid
 | **Q3** | NumPy exercises | Module 06 | [Q3.md](Quiz/Q3.md) |
 | **Q4** | Matplotlib exercises | Module 07 | [Q4.md](Quiz/Q4.md) |
 | **Q5** | Pandas exercises | Module 08 | [Q5.md](Quiz/Q5.md) |
-| **Q6** | Linear Regression | Module 13 | [Q6.md](Quiz/Q6.md) |
+| **Q6** | Linear Regression | Module 13 | [Q6.md](Quiz/Q7.md) |
+| **Q7** | ML Training | Module 16 | [Q7.md](Quiz/Q6.md) |
+| **Q8** | Gridsearch and Pipeline | Module 19 | [Q8.md](Quiz/Q8.md) |
+
 
 ---
 
@@ -104,8 +107,11 @@ AIEngineeringToturial/
 │   ├── AI_Pre_Processing.py
 │   ├── AI_Statistics.py
 │   ├── AI_Regression.ipynb
-│   └── AI_Ml_intro.ipynb
-│
+│   ├── AI_Ml_intro.ipynb
+│   ├── AI_ML_GridsearchCV.ipynb
+│   ├── AI_Feature_engineering.ipynb
+│   ├── AI_ML_Pipeline_.ipynb)
+│   └── AI_ML_Unsupervised.ipynb
 ├── Reviews/                  # Review / summary files
 │   ├── 01_24bahman.py
 │   ├── 02_7Esfand_1404.md
@@ -119,6 +125,8 @@ AIEngineeringToturial/
     ├── Q4.md
     ├── Q5.md
     ├── Q6.md
+    ├── Q7.md
+    ├── Q8.md
     └── quiz_data
         ├── Material_Strength_Temperature.xlsx
         ├── taxi_fare_dataset.xlsx
