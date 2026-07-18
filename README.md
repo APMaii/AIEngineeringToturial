@@ -38,7 +38,11 @@ This repository contains lecture materials and implementations for a professiona
 | **13** | Statistics | Statistics Overview required for Machine learning | [AI_Statistics.py](AI_Tutorials/AI_Statistics.py) |
 | **14** | Linear Regression | Introduction of Machine learning and linear regression| [AI_Regression.ipynb](AI_Tutorials/AI_Regression.ipynb) |
 | **15** | Machine Learning Intro | Introduction of Machine learning | [AI_Ml_intro.ipynb](AI_Tutorials/AI_Ml_intro.ipynb) |
-
+| **16** | Machine Learning Models | Machine learning models| [ML_Models.ipynb](AI_Tutorials/ML_Models.ipynb) |
+| **17** | GridSearchCV| Hyperparameter tuning with cross validation| [AI_ML_GridsearchCV.ipynb](AI_Tutorials/AI_ML_GridsearchCV.ipynb) |
+| **18** | Feature Engineering | Preparing data before ML Pipelines| [AI_Feature_engineering.ipynb](AI_Tutorials/AI_Feature_engineering.ipynb) |
+| **19** | Machine Learning Pipeline | Complete Pipeline for preprocessing and Modeling| [AI_ML_Pipeline_.ipynb](AI_Tutorials/AI_ML_Pipeline_.ipynb) |
+| **20** | Unsupervised Machine Learning| Intro on Clustering and Dimentional reduction| [AI_ML_Unsupervised.ipynb](AI_Tutorials/AI_ML_Unsupervised.ipynb) |
 
 
 
