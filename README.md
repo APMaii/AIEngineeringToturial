@@ -43,6 +43,11 @@ This repository contains lecture materials and implementations for a professiona
 | **18** | Feature Engineering | Preparing data before ML Pipelines| [AI_Feature_engineering.ipynb](AI_Tutorials/AI_Feature_engineering.ipynb) |
 | **19** | Machine Learning Pipeline | Complete Pipeline for preprocessing and Modeling| [AI_ML_Pipeline_.ipynb](AI_Tutorials/AI_ML_Pipeline_.ipynb) |
 | **20** | Unsupervised Machine Learning| Intro on Clustering and Dimentional reduction| [AI_ML_Unsupervised.ipynb](AI_Tutorials/AI_ML_Unsupervised.ipynb) |
+| **21** | Machine Learning Examples| Real Example of Supervised regression, classification and unsupervised| [AI_ML_Examples.py](AI_Tutorials/AI_ML_Examples.py) |
+
+
+
+
 
 
 
