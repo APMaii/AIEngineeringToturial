@@ -44,6 +44,8 @@ This repository contains lecture materials and implementations for a professiona
 | **19** | Machine Learning Pipeline | Complete Pipeline for preprocessing and Modeling| [AI_ML_Pipeline_.ipynb](AI_Tutorials/AI_ML_Pipeline_.ipynb) |
 | **20** | Unsupervised Machine Learning| Intro on Clustering and Dimentional reduction| [AI_ML_Unsupervised.ipynb](AI_Tutorials/AI_ML_Unsupervised.ipynb) |
 | **21** | Machine Learning Examples| Real Example of Supervised regression, classification and unsupervised| [AI_ML_Examples.py](AI_Tutorials/AI_ML_Examples.py) |
+| **22** | Introduction on Neural Networks| Neural Network concept and introduction on deep learning| [AI_Neural_Nets_Intro.ipynb](AI_Tutorials/AI_Neural_Nets_Intro.ipynb) |
+| **23** | Deep learning introduction| Training neural network with tensorflow and pytorch| [AI_Deep_Learning.ipynb](AI_Tutorials/AI_Deep_Learning.ipynb) |
 
 
 
@@ -115,8 +117,12 @@ AIEngineeringToturial/
 │   ├── AI_Ml_intro.ipynb
 │   ├── AI_ML_GridsearchCV.ipynb
 │   ├── AI_Feature_engineering.ipynb
-│   ├── AI_ML_Pipeline_.ipynb)
-│   └── AI_ML_Unsupervised.ipynb
+│   ├── AI_ML_Pipeline_.ipynb
+│   ├── AI_ML_Unsupervised.ipynb
+│   ├── AI_ML_Examples.py
+│   ├── AI_Neural_Nets_Intro.ipynb
+│   └── AI_Deep_Learning.ipynb
+│
 ├── Reviews/                  # Review / summary files
 │   ├── 01_24bahman.py
 │   ├── 02_7Esfand_1404.md
