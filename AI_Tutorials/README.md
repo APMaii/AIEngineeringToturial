@@ -55,6 +55,9 @@ Use this guide to read the files in the same sequence as the main `README.md`.
 20. [AI_ML_Examples.py](AI_ML_Examples.py)
 
 
+21. [AI_Neural_Nets_Intro.ipynb](AI_Neural_Nets_Intro.ipynb)
+
+22. [AI_Deep_Learning.ipynb](AI_Deep_Learning.ipynb)
 
 ## Additional File
 
