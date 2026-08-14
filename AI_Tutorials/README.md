@@ -59,6 +59,13 @@ Use this guide to read the files in the same sequence as the main `README.md`.
 
 22. [AI_Deep_Learning.ipynb](AI_Deep_Learning.ipynb)
 
+23. [AI_Deep_Learning_in_details.ipynb](AI_Deep_Learning_in_details.ipynb)
+
+24. [AI_Deep_learning_coding.ipynb](AI_Deep_learning_coding.ipynb)
+
+25. [AI_CNNs.ipynb](AI_CNNs.ipynb)
+
+
 ## Additional File
 
 - [AI_LINUX.md](AI_LINUX.md): Linux and DevOps basics for engineering workflows and production readiness.
