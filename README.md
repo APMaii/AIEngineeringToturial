@@ -98,32 +98,32 @@ AIEngineeringToturial/
 │   └── telegram_test1.py … telegram_test7.py
 │
 ├── AI_Tutorials/
-│   ├── README.md                  # Study guide and reading sequence
-│   ├── AI_Python_Review.py       # 01: Python fundamentals review
-│   ├── ADVANCED_Class_Object.py  # 02: Advanced classes and OOP
-│   ├── AI_CLI.md                 # 03: Command Line Interface & Shell
-│   ├── AI_GIT.md                 # 04: Git, GitHub, version control
-│   ├── AI_NUMPY.py               # 06: NumPy
-│   ├── AI_Matplotlib.ipynb       # 07: Matplotlib
-│   ├── AI_LINUX.md               # Linux & DevOps
-│   ├── AI_Linear_Algebra.py      #
-│   ├── AI_Calculus.py
-│   ├── AI_Numerical.py
-│   ├── AI_Pandas.py
-│   ├── AI_Pre_Processing.py
-│   ├── AI_Statistics.py
-│   ├── AI_Regression.ipynb
-│   ├── AI_Ml_intro.ipynb
-│   ├── AI_ML_GridsearchCV.ipynb
-│   ├── AI_Feature_engineering.ipynb
-│   ├── AI_ML_Pipeline_.ipynb
-│   ├── AI_ML_Unsupervised.ipynb
-│   ├── AI_ML_Examples.py
-│   ├── AI_Neural_Nets_Intro.ipynb
-│   ├── AI_Deep_Learning.ipynb
-│   ├── AI_Deep_Learning_in_details.ipynb
-│   ├── AI_Deep_learning_coding.ipynb
-│   └── AI_CNNs.ipynb
+│   ├── README.md                    # Study guide and reading sequence
+│   ├── AI_Python_Review.py          # Python fundamentals review
+│   ├── ADVANCED_Class_Object.py     # dvanced classes and OOP
+│   ├── AI_CLI.md                    # Command Line Interface & Shell
+│   ├── AI_GIT.md                    # Git, GitHub, version control
+│   ├── AI_NUMPY.py                  # NumPy tutorials for calculations
+│   ├── AI_Matplotlib.ipynb          # Matplotlib for plotting
+│   ├── AI_LINUX.md                  # Linux & DevOps
+│   ├── AI_Linear_Algebra.py         # Linear Algebra with scipy and sympy
+│   ├── AI_Calculus.py               # calculus with scipy and sympy
+│   ├── AI_Numerical.py              # Numerical modeling 
+│   ├── AI_Pandas.py                 # Pandas for DataFrames
+│   ├── AI_Pre_Processing.py         # Pandas for data preprocessing
+│   ├── AI_Statistics.py             # Statistics pre-Machine learning
+│   ├── AI_Regression.ipynb          # Simple statistic Linear regression
+│   ├── AI_Ml_intro.ipynb            # Introductin on Machine learning
+│   ├── AI_ML_GridsearchCV.ipynb     # Gridsearch Cross Validation
+│   ├── AI_Feature_engineering.ipynb # Feature engineering for ML
+│   ├── AI_ML_Pipeline_.ipynb        # Pipeline for all Machine learning
+│   ├── AI_ML_Unsupervised.ipynb     # Unsupervised learning
+│   ├── AI_ML_Examples.py            # Practical Machine learning Examples
+│   ├── AI_Neural_Nets_Intro.ipynb   # Introduction on Neural networks 
+│   ├── AI_Deep_Learning.ipynb       # Introduction on Deep Learnings
+│   ├── AI_Deep_Learning_in_details.ipynb  # More details  on Deep Learning
+│   ├── AI_Deep_learning_coding.ipynb # Intro on coding with pytorch and tensorflow keras
+│   └── AI_CNNs.ipynb                # Introduction on Convolutional Neural Networks (CNNs)
 │
 ├── Reviews/                  # Review / summary files
 │   ├── 01_24bahman.py
