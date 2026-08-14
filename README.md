@@ -46,9 +46,7 @@ This repository contains lecture materials and implementations for a professiona
 | **21** | Machine Learning Examples| Real Example of Supervised regression, classification and unsupervised| [AI_ML_Examples.py](AI_Tutorials/AI_ML_Examples.py) |
 | **22** | Introduction on Neural Networks| Neural Network concept and introduction on deep learning| [AI_Neural_Nets_Intro.ipynb](AI_Tutorials/AI_Neural_Nets_Intro.ipynb) |
 | **23** | Deep learning introduction| Training neural network with tensorflow and pytorch| [AI_Deep_Learning.ipynb](AI_Tutorials/AI_Deep_Learning.ipynb) |
-
 | **24** | Deep learning In details| Activatuion, loss , optimizer concepts in neural networks| [AI_Deep_Learning_in_details.ipynb](AI_Tutorials/AI_Deep_Learning_in_details.ipynb) |
-
 | **25** | Deep learning Coding | More notes on pytorch and tensorflow and classification example| [AI_Deep_learning_coding.ipynb](AI_Tutorials/AI_Deep_learning_coding.ipynb) |
 | **26** | Convolutaional neural networks (CNNs) | Other archietctures of neural networks for vision| [AI_Other_Architectures.ipynb](AI_CNNs.ipynb/AI_CNNs.ipynb) |
 
