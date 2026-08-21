@@ -54,7 +54,6 @@ Use this guide to read the files in the same sequence as the main `README.md`.
 
 20. [AI_ML_Examples.py](AI_ML_Examples.py)
 
-
 21. [AI_Neural_Nets_Intro.ipynb](AI_Neural_Nets_Intro.ipynb)
 
 22. [AI_Deep_Learning.ipynb](AI_Deep_Learning.ipynb)
@@ -64,6 +63,17 @@ Use this guide to read the files in the same sequence as the main `README.md`.
 24. [AI_Deep_learning_coding.ipynb](AI_Deep_learning_coding.ipynb)
 
 25. [AI_CNNs.ipynb](AI_CNNs.ipynb)
+
+26. [AI_RNN.ipynb](AI_RNN.ipynb)
+
+27. [AI_NLP.ipynb](AI_NLP.ipynb)
+
+28. [AI_LSTM.ipynb](AI_LSTM.ipynb)
+
+29. [AI_Autoencoder.ipynb](AI_Autoencoder.ipynb)
+
+30. [AI_Generative_Model.ipynb](AI_Generative_Model.ipynb)
+
 
 
 ## Additional File
