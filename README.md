@@ -48,7 +48,14 @@ This repository contains lecture materials and implementations for a professiona
 | **23** | Deep learning introduction| Training neural network with tensorflow and pytorch| [AI_Deep_Learning.ipynb](AI_Tutorials/AI_Deep_Learning.ipynb) |
 | **24** | Deep learning In details| Activatuion, loss , optimizer concepts in neural networks| [AI_Deep_Learning_in_details.ipynb](AI_Tutorials/AI_Deep_Learning_in_details.ipynb) |
 | **25** | Deep learning Coding | More notes on pytorch and tensorflow and classification example| [AI_Deep_learning_coding.ipynb](AI_Tutorials/AI_Deep_learning_coding.ipynb) |
-| **26** | Convolutaional neural networks (CNNs) | Other archietctures of neural networks for vision| [AI_CNNs.ipynb](AI_CNNs.ipynb/AI_CNNs.ipynb) |
+| **26** | Convolutaional neural networks (CNNs) | Other archietctures of neural networks for vision| [AI_CNNs.ipynb](AAI_Tutorials/AI_CNNs.ipynb) |
+| **27** | Recurrent neural networks(RNN)| Intro on RNN and recurrent feedback loops | [AI_RNN.ipynb](AI_Tutorials/AI_RNN.ipynb) |
+| **28** |Intro on Natural Language processing (NLP) | intro on NLP and tokenization and embedding models| [AI_NLP.ipynb](AI_Tutorials/AI_NLP.ipynb) |
+| **29** |Long-Short Term Memory (LSTM)| RNN limitation and emergence of LSTM  | [AI_LSTM.ipynb](AI_Tutorials/AI_LSTM.ipynb) |
+| **30** |Auto encoders| Intro on Encoder-decoder for latent represnetation| [AI_Autoencoder.ipynb](AI_Tutorials/AI_Autoencoder.ipynb) |
+| **31** |Deep Generative Models| intro on Variational autoencoder (VAE) and Generative Adversial network (GAN)| [AI_Generative_Model.ipynb](AI_Tutorials/AI_Generative_Model.ipynb) |
+
+
 
 
 
@@ -123,7 +130,12 @@ AIEngineeringToturial/
 │   ├── AI_Deep_Learning.ipynb       # Introduction on Deep Learnings
 │   ├── AI_Deep_Learning_in_details.ipynb  # More details  on Deep Learning
 │   ├── AI_Deep_learning_coding.ipynb # Intro on coding with pytorch and tensorflow keras
-│   └── AI_CNNs.ipynb                # Introduction on Convolutional Neural Networks (CNNs)
+│   ├── AI_CNNs.ipynb                # Introduction on Convolutional Neural Networks (CNNs)
+│   ├── AI_RNN.ipynb                 # Recurrent Neural Networks
+│   ├── AI_NLP.ipynb                 # Introduction on Natural Language processing
+│   ├── AI_LSTM.ipynb                # Introduction on LSTM
+│   ├── AI_Autoencoder.ipynb         # Introduction on Encoder-Decoder models
+│   └── AI_Generative_Model.ipynb    # Introduction on Generative models (VAE ,GAN)
 │
 ├── Reviews/                  # Review / summary files
 │   ├── 01_24bahman.py
