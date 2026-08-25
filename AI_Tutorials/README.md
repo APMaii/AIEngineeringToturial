@@ -74,6 +74,32 @@ Use this guide to read the files in the same sequence as the main `README.md`.
 
 30. [AI_Generative_Model.ipynb](AI_Generative_Model.ipynb)
 
+31. [AI_DL_Example_Tutorials.ipynb](AI_DL_Example_Tutorials.ipynb)
+
+32. [AI_DL_Example_Notes.ipynb](AI_DL_Example_Notes.ipynb)
+
+33. [Autoencoder_example.py](Autoencoder_example.py)
+
+34. [VAE_example.py](VAE_example.py)
+
+35. [VAE_example2.py](VAE_example2.py)
+
+36. [AI_DL_GAN.ipynb](AI_DL_GAN.ipynb)
+
+37. [RNN_examples.py](RNN_examples.py)
+
+38. [LSTM_EXAMPLE1.py](LSTM_EXAMPLE1.py)
+
+39. [LSTM_EXAMPLE2.py](LSTM_EXAMPLE2.py)
+
+40. [LSTM_EXAMPLE3.py](LSTM_EXAMPLE3.py)
+
+41. [LSTM_EXAMPLE4.py](LSTM_EXAMPLE4.py)
+
+
+
+
+
 
 
 ## Additional File
