@@ -54,6 +54,18 @@ This repository contains lecture materials and implementations for a professiona
 | **29** |Long-Short Term Memory (LSTM)| RNN limitation and emergence of LSTM  | [AI_LSTM.ipynb](AI_Tutorials/AI_LSTM.ipynb) |
 | **30** |Auto encoders| Intro on Encoder-decoder for latent represnetation| [AI_Autoencoder.ipynb](AI_Tutorials/AI_Autoencoder.ipynb) |
 | **31** |Deep Generative Models| intro on Variational autoencoder (VAE) and Generative Adversial network (GAN)| [AI_Generative_Model.ipynb](AI_Tutorials/AI_Generative_Model.ipynb) |
+| **32** | Tutorials on Deep learning examples | Review on Deep learning architecture before examples   | [AI_DL_Example_Tutorials.ipynb](AI_Tutorials/AI_DL_Example_Tutorials.ipynb) |
+| **33** |Deep learning example notes |  Notes on how the deep learning examples must be studied  | [AI_DL_Example_Notes.ipynb](AI_Tutorials/AI_DL_Example_Notes.ipynb) |
+| **34** | Autoencoder Example |  Training Autoencoder on MNIST dataset with pytorch  | [Autoencoder_example.py](AI_Tutorials/Autoencoder_example.py) |
+| **35** |  Variational Autoencoder example 1| Training VAE on MNIST dataset with Pytorch  | [VAE_example.py](AI_Tutorials/VAE_example.py) |
+| **36** | Variational Autoencoder example 2 | Training VAE on CelebA faces datasets withPytorch    | [VAE_example2.py](AI_Tutorials/VAE_example2.py) |
+| **37** |Generative Adversial network (GAN) |  Intro on Generative Adversial network (GAN) and toward diffusion models | [AI_DL_GAN.ipynb](AI_Tutorials/AI_DL_GAN.ipynb) |
+| **38** | RNN on sentiment analysis  | Training RNN, LSTM , GRU on iMDB dataset for sentiment analysis  with pytorch | [RNN_examples.py](AI_Tutorials/RNN_examples.py) |
+| **39** | LSTM on bitcoin prediction | Training  LSTM on bitcoin 60 days to predict next 7 days on gecoin dataset with pytorch   | [LSTM_EXAMPLE1.py](AI_Tutorials/LSTM_EXAMPLE1.py) |
+| **40** | LSTM on Khayyam Poems | Training LSTM on Khayyam poems on ganjoor scraped data with pytorch| [LSTM_EXAMPLE2.py](AI_Tutorials/LSTM_EXAMPLE2.py) |
+| **41** | LSTM Autocomplete python codes | Training LSTM on python codes for building python auto completion with pytorch| [LSTM_EXAMPLE3.py](AI_Tutorials/LSTM_EXAMPLE3.py) |
+| **42** | LSTM on speech recognition | Training LSTM on Speech recognition commands with pytorch | [LSTM_EXAMPLE4.py](AI_Tutorials/LSTM_EXAMPLE4.py) |
+
 
 
 
@@ -135,7 +147,18 @@ AIEngineeringToturial/
 │   ├── AI_NLP.ipynb                 # Introduction on Natural Language processing
 │   ├── AI_LSTM.ipynb                # Introduction on LSTM
 │   ├── AI_Autoencoder.ipynb         # Introduction on Encoder-Decoder models
-│   └── AI_Generative_Model.ipynb    # Introduction on Generative models (VAE ,GAN)
+│   ├── AI_Generative_Model.ipynb    # Introduction on Generative models (VAE ,GAN)
+│   ├── AI_DL_Example_Tutorials.ipynb # Tutorials on DL Examples
+│   ├── AI_DL_Example_Notes.ipynb    # Notes on how study examples
+│   ├── Autoencoder_example.py       # Example on MNIST Autoencoder training
+│   ├── VAE_example.py               # Example on MNIST VAE Training
+│   ├── VAE_example2.py              # Example on CelebA VAE Training
+│   ├── AI_DL_GAN.ipynb              # Introduction on Generative adversial network (GAN)
+│   ├── RNN_examples.py.             # Example on IMDB Sentiment analysis with RNN
+│   ├── LSTM_EXAMPLE1.py             # Example on Bitcoin prediction with LSTM
+│   ├── LSTM_EXAMPLE2.py             # Example on Khayyam Poem Generator with LSTM
+│   ├── LSTM_EXAMPLE3.py             # Example on Python autocomplete with LSTM
+│   └── LSTM_EXAMPLE4.py             # Example on Speech recognition with LSTM
 │
 ├── Reviews/                  # Review / summary files
 │   ├── 01_24bahman.py
