@@ -562,17 +562,17 @@ myprogram.py	new2.py		newprogram.py	newwwwwww.py
 
 miri dkahele github mishi , ye repo misazi (github)
 mesle hamishe shoam kafie berid too safeye hoem githubeton va rooye new bezanid
-<img src="Pictures/new_repo.png" width="300" alt="New repo">
+<img src="../Pictures/new_repo.png" width="300" alt="New repo">
 
 badesh name , description hamechio misazid
 
-<img src="Pictures/new_repo2.png" width="500" alt="New repo2">
+<img src="../Pictures/new_repo2.png" width="500" alt="New repo2">
 
 
 badesh kheyli sade linke repo behetoon mide k in link , dar asl linke
 repository github hast 
 
-![link repo](Pictures/link_repo.png)
+![link repo](../Pictures/link_repo.png)
 
 vaghti repo ro sakhtim linkesh ro var midarim
 linkesh yechi mese ine *https://github.com/user name shoma / esme repo.git*
@@ -623,7 +623,7 @@ github
 zamani hast k code hast , mikhaysh biarish too lcoalet
 (zamani k code sherkate) khode githube
 
-![cloning](Pictures/clone_pic.png)
+![cloning](../Pictures/clone_pic.png)
 
 copy mikoni linko va linko mizni
 git clone linke
@@ -844,28 +844,28 @@ pas aval varede githubeton beshid
 Khob aval mirid toye github , rooye samte rast profile click konid va
 setting ro entkehab konid
 
-<img src="Pictures/setting.png" width="200" alt="setting">
+<img src="../Pictures/setting.png" width="200" alt="setting">
 
 
 badesh kafie scroll konid paeen , tahe tah , samte chaop yek 
 developer setting ro mibinid bznid roosh
-![DV](Pictures/developer_settings.png)
+![DV](../Pictures/developer_settings.png)
 
 badesh kafie rooye personal acces token ha bznid va baz mishe va rooye token(classic) cliuck konid
-![p token](Pictures/personal_token.png)
+![p token](../Pictures/personal_token.png)
 
 badesh shoma mitonid bezanid k rooye generte 
-![geenrate](Pictures/generate_token.png)
+![geenrate](../Pictures/generate_token.png)
 
 
 badesh mitonid inja note bzarid k yadeton bashe in token ro chra skahtid, mitonid behesh zaman bdid (choon monghazi mish) va bayad bgid cheghad mikhahid
-![note token](Pictures/note_token.png)
+![note token](../Pictures/note_token.png)
 
 badesh kafie bezanid option haro bdid , in option ha mige k ba in token , cheghadr mitond dastrssi b github dashte bashid, ag roo lapttobe khdoton has, hame tik haro bezanid rahat
-![option token](Pictures/options_token.png)
+![option token](../Pictures/options_token.png)
 
 dar enteha rooye submit bezanid va vaghty roo submit mizanid
-![submit token](Pictures/submit_token.png)
+![submit token](../Pictures/submit_token.png)
 
 hala behetoon y adad mide k hamin addad **Token** e shoma hast
 va vaghty github shoma *git pull* *git clone* ya harkari krdiid azaton
