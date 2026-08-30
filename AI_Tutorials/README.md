@@ -96,7 +96,15 @@ Use this guide to read the files in the same sequence as the main `README.md`.
 
 41. [LSTM_EXAMPLE4.py](LSTM_EXAMPLE4.py)
 
+42. [AI_DL_Overview.ipynb](AI_DL_Overview.ipynb)
 
+43. [AI_Seq2Seq.ipynb](AI_Seq2Seq.ipynb)
+
+44. [AI_Attention_is_all_you_need.ipynb](AI_Attention_is_all_you_need.ipynb)
+
+45. [AI_DL_Transformers.ipynb](AI_DL_Transformers.ipynb)
+
+46. [AI_DL_Intro_Hugging_Face.ipynb](AI_DL_Intro_Hugging_Face.ipynb)
 
 
 
