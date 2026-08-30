@@ -162,7 +162,12 @@ AIEngineeringToturial/
 │   ├── LSTM_EXAMPLE1.py             # Example on Bitcoin prediction with LSTM
 │   ├── LSTM_EXAMPLE2.py             # Example on Khayyam Poem Generator with LSTM
 │   ├── LSTM_EXAMPLE3.py             # Example on Python autocomplete with LSTM
-│   └── LSTM_EXAMPLE4.py             # Example on Speech recognition with LSTM
+│   ├── LSTM_EXAMPLE4.py             # Example on Speech recognition with LSTM
+│   ├── AI_DL_Overview.ipynb         # Review on Deep learning architectures 
+│   ├── AI_Seq2Seq.ipynb             # Tutorial on Sequence 2 Sequence models 
+│   ├── AI_Attention_is_all_you_need.ipynb # Tutotial on Attention and self attention
+│   ├── AI_DL_Transformers.ipynb     # Example on Python autocomplete with LSTM
+│   └── AI_DL_Intro_Hugging_Face.ipynb  # Intro On Hugging Face
 │
 ├── Reviews/                  # Review / summary files
 │   ├── 01_24bahman.py
