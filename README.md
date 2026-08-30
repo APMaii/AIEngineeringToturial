@@ -66,12 +66,13 @@ This repository contains lecture materials and implementations for a professiona
 | **41** | LSTM Autocomplete python codes | Training LSTM on python codes for building python auto completion with pytorch| [LSTM_EXAMPLE3.py](AI_Tutorials/LSTM_EXAMPLE3.py) |
 | **42** | LSTM on speech recognition | Training LSTM on Speech recognition commands with pytorch | [LSTM_EXAMPLE4.py](AI_Tutorials/LSTM_EXAMPLE4.py) |
 | **43** | Overview of Deep learning| Review on deep learning architectures | [AI_DL_Overview.ipynb](AI_Tutorials/AI_DL_Overview.ipynb) |
-| **44** | Sequence 2 Sequence Models | Intro on Sequence 2 sequence models | [AI_Seq2Seq.ipynb](AI_Tutorials/AI_Seq2Seq.ipynb) |
-| **45** | Attention is all you need | Intro on Attention and Self-attention | [AI_Attention_is_all_you_need.ipynb](AI_Tutorials/AI_Attention_is_all_you_need.ipynb) |
-| **46** | Transformers | Tutorials on Transformers| [AI_DL_Transformers.ipynb](AI_Tutorials/AI_DL_Transformers.ipynb) |
-| **47** | Hugging Face | Friendly Intro on hugging face | [AI_DL_Intro_Hugging_Face.ipynb](AI_Tutorials/AI_DL_Intro_Hugging_Face.ipynb) |
-
-
+| **44** | Computer Vision | Intro on Computer vision and Open CV| [intro_on_Computer_Vision.ipynb](AI_Tutorials/intro_on_Computer_Vision.ipynb) |
+| **45** | Signal Processing | Intro on signal procesing (audio)| [intro_on_Signal_Processing.ipynb](AI_Tutorials/intro_on_Signal_Processing.ipynb) |
+| **46** | Natural Language Processing| Intro on Natural language processing| [intro_on_Natural_Language_processing.ipynb](AI_Tutorials/intro_on_Natural_Language_processing.ipynb) |
+| **47** | Sequence 2 Sequence Models | Intro on Sequence 2 sequence models | [AI_Seq2Seq.ipynb](AI_Tutorials/AI_Seq2Seq.ipynb) |
+| **48** | Attention is all you need | Intro on Attention and Self-attention | [AI_Attention_is_all_you_need.ipynb](AI_Tutorials/AI_Attention_is_all_you_need.ipynb) |
+| **49** | Transformers | Tutorials on Transformers| [AI_DL_Transformers.ipynb](AI_Tutorials/AI_DL_Transformers.ipynb) |
+| **50** | Hugging Face | Friendly Intro on hugging face | [AI_DL_Intro_Hugging_Face.ipynb](AI_Tutorials/AI_DL_Intro_Hugging_Face.ipynb) |
 
 
 
@@ -163,7 +164,10 @@ AIEngineeringToturial/
 │   ├── LSTM_EXAMPLE2.py             # Example on Khayyam Poem Generator with LSTM
 │   ├── LSTM_EXAMPLE3.py             # Example on Python autocomplete with LSTM
 │   ├── LSTM_EXAMPLE4.py             # Example on Speech recognition with LSTM
-│   ├── AI_DL_Overview.ipynb         # Review on Deep learning architectures 
+│   ├── AI_DL_Overview.ipynb         # Review on Deep learning architectures
+│   ├── intro_on_Computer_Vision.ipynb # Intro on Computer vision and OpenCV
+│   ├── intro_on_Signal_Processing.ipynb # Intro on Signal Processing
+│   ├── intro_on_Natural_Language_processing.ipynb # Intro on NLP
 │   ├── AI_Seq2Seq.ipynb             # Tutorial on Sequence 2 Sequence models 
 │   ├── AI_Attention_is_all_you_need.ipynb # Tutotial on Attention and self attention
 │   ├── AI_DL_Transformers.ipynb     # Example on Python autocomplete with LSTM

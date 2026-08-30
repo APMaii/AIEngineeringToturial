@@ -106,7 +106,13 @@ Use this guide to read the files in the same sequence as the main `README.md`.
 
 46. [AI_DL_Intro_Hugging_Face.ipynb](AI_DL_Intro_Hugging_Face.ipynb)
 
+47. [intro_on_Computer_Vision.ipynb](intro_on_Computer_Vision.ipynb)
 
+48. [intro_on_Signal_Processing.ipynb](intro_on_Signal_Processing.ipynb)
+
+49. [intro_on_Natural_Language_processing.ipynb](intro_on_Natural_Language_processing.ipynb)
+
+50. []()
 
 
 
